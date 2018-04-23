@@ -9,13 +9,13 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-
+import com.example.baopengjian.ray_seniorui.first.SeniorUI01_DrawingProcessActivity;
 
 
 public class MainActivity extends AppCompatActivity {
 
-//    static Class[] TARGETS = {RxCreateActivity.class,RxBindingActivity.class};
-//    static String[] TARGETS_DESC = {"RxCreateActivity","RxBindingActivity"};
+    static Class[] TARGETS = {SeniorUI01_DrawingProcessActivity.class};
+    static String[] TARGETS_DESC = {"UI绘制流程应用"};
 
     private Context context;
 
@@ -27,15 +27,14 @@ public class MainActivity extends AppCompatActivity {
         context = this;
 
         ListView lv = (ListView) findViewById(R.id.lv);
-       /* lv.setAdapter(new ArrayAdapter<>(context, android.R.layout.simple_list_item_1,TARGETS_DESC));
+        lv.setAdapter(new ArrayAdapter<>(context, android.R.layout.simple_list_item_1, TARGETS_DESC));
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 startActivity(new Intent(context, TARGETS[position]));
             }
-        });*/
+        });
     }
-
 
 
 

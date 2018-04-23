@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff8b90af"
+    android:id="@+id/rl"
+>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:onClick="click"
+        android:text="显示或隐藏"
+        android:layout_height="wrap_content" />
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:orientation="vertical"
+            android:layout_height="fill_parent">
+
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_margin="20dp"
+
+                android:src="@mipmap/ic_launcher"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="200dp"/>
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_margin="100dp"
+
+                android:src="@mipmap/ic_launcher"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="400dp"/>
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_margin="100dp"
+
+                android:src="@mipmap/ic_launcher"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="400dp"/>
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_margin="100dp"
+
+                android:src="@mipmap/ic_launcher"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="400dp"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

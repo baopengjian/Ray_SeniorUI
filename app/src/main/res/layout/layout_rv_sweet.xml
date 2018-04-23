@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/freeGrowUpParentF"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sheet_height"
+        android:layout_gravity="bottom"
+        >
+
+        <com.example.baopengjian.ray_seniorui.first.BouncingView
+            android:id="@+id/sv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="70dp"
+            android:clipChildren="false"
+            android:layoutAnimation="@anim/rv_layout_animation"
+            android:overScrollMode="never"
+            />
+
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="arc_max_height">50dp</dimen>
+    <dimen name="sheet_height">290dp</dimen>
+</resources>
