@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".first.SeniorUI01_DrawingProcessActivity" />
+        <activity android:name=".second.FlowLayoutActivity"/>
     </application>
 
 </manifest>

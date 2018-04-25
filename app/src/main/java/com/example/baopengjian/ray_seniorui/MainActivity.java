@@ -10,12 +10,13 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.example.baopengjian.ray_seniorui.first.SeniorUI01_DrawingProcessActivity;
+import com.example.baopengjian.ray_seniorui.second.FlowLayoutActivity;
 
 
 public class MainActivity extends AppCompatActivity {
 
-    static Class[] TARGETS = {SeniorUI01_DrawingProcessActivity.class};
-    static String[] TARGETS_DESC = {"UI绘制流程应用"};
+    static Class[] TARGETS = {SeniorUI01_DrawingProcessActivity.class, FlowLayoutActivity.class};
+    static String[] TARGETS_DESC = {"01_UI绘制流程应用_底部弹出","02_UI绘制流程应用_flowLayout"};
 
     private Context context;
 
