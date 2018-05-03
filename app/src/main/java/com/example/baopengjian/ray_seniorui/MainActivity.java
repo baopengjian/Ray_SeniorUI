@@ -11,12 +11,13 @@ import android.widget.ListView;
 
 import com.example.baopengjian.ray_seniorui.first.SeniorUI01_DrawingProcessActivity;
 import com.example.baopengjian.ray_seniorui.second.FlowLayoutActivity;
+import com.example.baopengjian.ray_seniorui.second.WaterFlowActivity;
 
 
 public class MainActivity extends AppCompatActivity {
 
-    static Class[] TARGETS = {SeniorUI01_DrawingProcessActivity.class, FlowLayoutActivity.class};
-    static String[] TARGETS_DESC = {"01_UI绘制流程应用_底部弹出","02_UI绘制流程应用_flowLayout"};
+    static Class[] TARGETS = {SeniorUI01_DrawingProcessActivity.class, FlowLayoutActivity.class, WaterFlowActivity.class};
+    static String[] TARGETS_DESC = {"01_UI绘制流程应用_底部弹出","02_UI绘制流程应用_flowLayout","02_UI绘制流程应用_WaterfallLayout"};
 
     private Context context;
 
