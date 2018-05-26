@@ -17,8 +17,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".first.SeniorUI01_DrawingProcessActivity" />
-        <activity android:name=".second.FlowLayoutActivity"/>
-        <activity android:name=".second.WaterFlowActivity"/>
+        <activity android:name=".second.SeniorUI02_FlowLayoutActivity"/>
+        <activity android:name=".second.SeniorUI02_WaterFlowActivity"/>
+        <activity android:name=".third.circle.SeniorUI03_CircleProgressActivity"/>
     </application>
 
 </manifest>

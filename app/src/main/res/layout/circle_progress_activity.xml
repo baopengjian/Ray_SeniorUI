@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.example.baopengjian.ray_seniorui.third.circle.CircleProgressBar
+
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/progressbar"
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+        app:roundProgressColor="#ff00ff"
+
+        app:textColor="#666666"
+        app:textSize="20dp"
+        app:roundWidth="15dp"
+        />
+</RelativeLayout>

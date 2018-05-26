@@ -13,7 +13,7 @@ import com.example.baopengjian.ray_seniorui.R;
  * （2）标签：能够显示标签文本，宽度大小不定，高度大小不定，每行顶部对齐，每列左对齐，可点击
  */
 
-public class FlowLayoutActivity extends AppCompatActivity {
+public class SeniorUI02_FlowLayoutActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

@@ -20,14 +20,14 @@ import java.util.Random;
  （3）每次添加元素加到最低高度的列上；
  */
 
-public class WaterFlowActivity extends AppCompatActivity{
+public class SeniorUI02_WaterFlowActivity extends AppCompatActivity{
 
     private static int IMG_COUNT = 5;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_water_flow);
+        setContentView(R.layout.circle_progress_activity);
 
         final WaterfallLayout waterfallLayout = ((WaterfallLayout)findViewById(R.id.waterfallLayout));
         findViewById(R.id.add_btn).setOnClickListener(new View.OnClickListener() {
@@ -67,7 +67,7 @@ public class WaterFlowActivity extends AppCompatActivity{
                 new WaterfallLayout.OnItemClickListener() {
                     @Override
                     public void onItemClick(View v, int index) {
-                        Toast.makeText(WaterFlowActivity.this, "item=" + index, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(SeniorUI02_WaterFlowActivity.this, "item=" + index, Toast.LENGTH_SHORT).show();
                     }
         });
     }
