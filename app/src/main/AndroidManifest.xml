@@ -21,6 +21,7 @@
         <activity android:name=".second.SeniorUI02_WaterFlowActivity"/>
         <activity android:name=".third.circle.SeniorUI03_CircleProgressActivity"/>
         <activity android:name=".third.basic.SeniorUI03_PaintBasicActivity"/>
+        <activity android:name=".third.basic.SeniorUI03_DashViewActivity"/>
     </application>
 
 </manifest>
