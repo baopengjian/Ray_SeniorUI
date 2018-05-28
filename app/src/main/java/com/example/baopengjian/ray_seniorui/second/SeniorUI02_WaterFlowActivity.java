@@ -27,7 +27,7 @@ public class SeniorUI02_WaterFlowActivity extends AppCompatActivity{
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.circle_progress_activity);
+        setContentView(R.layout.activity_water_flow);
 
         final WaterfallLayout waterfallLayout = ((WaterfallLayout)findViewById(R.id.waterfallLayout));
         findViewById(R.id.add_btn).setOnClickListener(new View.OnClickListener() {
