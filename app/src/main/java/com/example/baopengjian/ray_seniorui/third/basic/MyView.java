@@ -15,6 +15,14 @@ import android.util.AttributeSet;
 import android.view.View;
 
 /**
+ * StrokeCap
+ * StrokeJoin
+ * CornerPathEffect
+ * DashPathEffect
+ * DiscretePathEffect
+ * PathDashPath
+ * ComposePathEffect
+ * SubpixelText
  */
 
 public class MyView extends View {
