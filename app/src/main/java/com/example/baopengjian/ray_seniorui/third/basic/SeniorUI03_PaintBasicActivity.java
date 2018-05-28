@@ -14,6 +14,7 @@ import com.example.baopengjian.ray_seniorui.R;
 
 /**
  * Created by Ray on 2018/5/26.
+ * Paint画路径常见用法
  */
 
 public class SeniorUI03_PaintBasicActivity extends AppCompatActivity {
