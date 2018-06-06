@@ -10,6 +10,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.example.baopengjian.ray_seniorui.first.SeniorUI01_DrawingProcessActivity;
+import com.example.baopengjian.ray_seniorui.fourth.SeniorUI04_ShaderActivity;
 import com.example.baopengjian.ray_seniorui.second.SeniorUI02_FlowLayoutActivity;
 import com.example.baopengjian.ray_seniorui.second.SeniorUI02_WaterFlowActivity;
 import com.example.baopengjian.ray_seniorui.third.basic.SeniorUI03_DashViewActivity;
@@ -22,10 +23,12 @@ public class MainActivity extends AppCompatActivity {
 
     static Class[] TARGETS = {SeniorUI01_DrawingProcessActivity.class,
             SeniorUI02_FlowLayoutActivity.class, SeniorUI02_WaterFlowActivity.class,
-            SeniorUI03_PaintBasicActivity.class,SeniorUI03_CircleProgressActivity.class, SeniorUI03_DashViewActivity.class, SeniorUI03_MinionActivity.class};
+            SeniorUI03_PaintBasicActivity.class,SeniorUI03_CircleProgressActivity.class, SeniorUI03_DashViewActivity.class, SeniorUI03_MinionActivity.class,
+            SeniorUI04_ShaderActivity.class};
     static String[] TARGETS_DESC = {"01_UI绘制流程应用_底部弹出",
             "02_UI绘制流程应用_flowLayout", "02_UI绘制流程应用_WaterfallLayout",
-            "03_Paint基本使用","03_圆形进度_CircleProgressBar","03_动态破折线","03_小黄人"};
+            "03_Paint基本使用","03_圆形进度_CircleProgressBar","03_动态破折线","03_小黄人",
+            "04_Shader_放大镜"};
 
     private Context context;
 
