@@ -21,9 +21,9 @@ public class SeniorUI04_ShaderActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-       // setContentView(R.layout.shader_activity);
-        ZoomImageView view = new ZoomImageView(this);
-        setContentView(view);
+        setContentView(R.layout.shader_activity);
+/*        ZoomImageView view = new ZoomImageView(this);
+        setContentView(view);*/
     }
 
 

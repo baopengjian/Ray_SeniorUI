@@ -9,13 +9,23 @@ import android.graphics.Matrix;
 import android.graphics.Shader;
 import android.graphics.drawable.ShapeDrawable;
 import android.graphics.drawable.shapes.OvalShape;
+import android.support.annotation.Nullable;
+import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
 
 import com.example.baopengjian.ray_seniorui.R;
 
 /**
- * Created by John on 2017/5/10.
+ * Require：放大镜效果
+ *      1、一张背景图片，触摸背景图片，会显示触摸区域会显示一个圆形放大
+ *     2、 手指滑动，触摸区域会随着移动
+ *
+ * Theory：
+ *    1）利用Paint的Shader实现
+ *    2） 将图片放大，创建一个ShapeDrawable，设置它的区域
+ *    3） 监听onTouchEvent，利用Matrix移动，设置到ShapeDrawable中
+ *
  */
 
 public class ZoomImageView extends View {
@@ -34,14 +44,25 @@ public class ZoomImageView extends View {
     private Matrix mMatrix;
 
     public ZoomImageView(Context context) {
-        super(context);
+        this(context,null);
+    }
 
+    public ZoomImageView(Context context, @Nullable AttributeSet attrs) {
+        this(context, attrs,0);
+    }
+
+    public ZoomImageView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+        super(context, attrs, defStyleAttr);
+        init();
+    }
+
+    private void init() {
         mBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.xyjy3);
         mBitmapScale = mBitmap;
         //放大后的整个图片
         mBitmapScale = Bitmap.createScaledBitmap(mBitmapScale,mBitmapScale.getWidth() * FACTOR,
                 mBitmapScale.getHeight() * FACTOR,true);
-        BitmapShader bitmapShader = new BitmapShader(mBitmapScale, Shader.TileMode.CLAMP,
+            BitmapShader bitmapShader = new BitmapShader(mBitmapScale, Shader.TileMode.CLAMP,
                 Shader.TileMode.CLAMP);
 
         mShapeDrawable = new ShapeDrawable(new OvalShape());
@@ -51,6 +72,8 @@ public class ZoomImageView extends View {
 
         mMatrix = new Matrix();
     }
+
+
 
     @Override
     protected void onDraw(Canvas canvas) {

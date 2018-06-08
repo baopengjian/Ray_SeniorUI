@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+    <com.example.baopengjian.ray_seniorui.fourth.ZoomImageView
+        android:layout_height="400dp"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        />
 
-</android.support.constraint.ConstraintLayout>
+    <com.example.baopengjian.ray_seniorui.fourth.MyGradientView
+       android:layout_marginTop="20dp"
+        android:layout_height="400dp"
+        android:background="@color/colorAccent"
+        android:layout_width="match_parent"
+        />
+
+
+
+        <com.example.baopengjian.ray_seniorui.fourth.LinearGradientTextView
+            android:layout_marginTop = "10dp"
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:background="@color/colorAccent"
+            />
+    </LinearLayout>
+</ScrollView>
