@@ -27,12 +27,12 @@ import com.example.baopengjian.ray_seniorui.R;
  * Created by John on 2017/5/10.
  */
 
-public class MyGradientView extends View {
+public class RadialGradientView extends View {
     private Paint mPaint;
 
     private int[] mColors = {Color.RED,Color.GREEN,Color.BLUE,Color.YELLOW};
 
-    public MyGradientView(Context context, @Nullable AttributeSet attrs) {
+    public RadialGradientView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
         mPaint = new Paint();
     }
