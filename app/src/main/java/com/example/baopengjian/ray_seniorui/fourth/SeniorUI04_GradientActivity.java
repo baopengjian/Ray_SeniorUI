@@ -8,6 +8,7 @@ import com.example.baopengjian.ray_seniorui.R;
 
 /**
  * Created by Ray on 2018/6/11.
+ * 环形渲染、梯度渲染、组合渲染
  */
 public class SeniorUI04_GradientActivity extends AppCompatActivity {
 

@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     static String[] TARGETS_DESC = {"01_UI绘制流程应用_底部弹出",
             "02_UI绘制流程应用_flowLayout", "02_UI绘制流程应用_WaterfallLayout",
             "03_Paint基本使用","03_圆形进度_CircleProgressBar","03_动态破折线","03_小黄人",
-            "04_BitmapShader:放大镜","04_LinearGradient:霓虹灯文字","04_RadialGradient"};
+            "04_BitmapShader:放大镜","04_LinearGradient:霓虹灯文字","04_环形渲染、梯度渲染、组合渲染"};
 
     private Context context;
 
