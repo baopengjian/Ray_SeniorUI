@@ -31,7 +31,7 @@ public class LinearGradientTextView extends TextView{
         super(context, attrs);
     }
 
-    @Override
+   @Override
     protected void onSizeChanged(int w, int h, int oldw, int oldh) {
         super.onSizeChanged(w, h, oldw, oldh);
         // 拿到TextView的画笔

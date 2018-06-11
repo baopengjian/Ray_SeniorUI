@@ -15,15 +15,13 @@ import java.util.List;
 
 
 
-public class SeniorUI04_ShaderActivity extends AppCompatActivity {
+public class SeniorUI04_LinearGradientActivity extends AppCompatActivity {
 
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.shader_activity);
-/*        ZoomImageView view = new ZoomImageView(this);
-        setContentView(view);*/
     }
 
 

@@ -23,8 +23,9 @@
         <activity android:name=".third.basic.SeniorUI03_PaintBasicActivity"/>
         <activity android:name=".third.basic.SeniorUI03_DashViewActivity"/>
         <activity android:name=".third.minion.SeniorUI03_MinionActivity"/>
-        <activity android:name=".fourth.SeniorUI04_ShaderActivity"/>
+        <activity android:name=".fourth.SeniorUI04_LinearGradientActivity"/>
         <activity android:name=".fourth.SeniorUI04_ShaderZoomActivity"/>
+        <activity android:name=".fourth.SeniorUI04_GradientActivity"/>
     </application>
 
 </manifest>
