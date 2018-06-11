@@ -29,18 +29,12 @@ import com.example.baopengjian.ray_seniorui.R;
 
 public class MyGradientView extends View {
     private Paint mPaint;
-    private Bitmap mBitMap = null;
 
-    private int mWidth;
-    private int mHeight;
     private int[] mColors = {Color.RED,Color.GREEN,Color.BLUE,Color.YELLOW};
 
     public MyGradientView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
-        mBitMap = ((BitmapDrawable)getResources().getDrawable(R.drawable.xyjy2)).getBitmap();
         mPaint = new Paint();
-        mWidth = mBitMap.getWidth();
-        mHeight = mBitMap.getHeight();
     }
 
     @Override
@@ -48,48 +42,9 @@ public class MyGradientView extends View {
         super.onDraw(canvas);
         canvas.drawColor(Color.WHITE);
 
-        /**
-         * TileMode.CLAMP 拉伸最后一个像素去铺满剩下的地方
-         * TileMode.MIRROR 通过镜像翻转铺满剩下的地方。
-         * TileMode.REPEAT 重复图片平铺整个画面（电脑设置壁纸）
-         */
-       /* BitmapShader bitMapShader = new BitmapShader(mBitMap, Shader.TileMode.MIRROR,
-                Shader.TileMode.MIRROR);
-        mPaint.setShader(bitMapShader);
-        mPaint.setAntiAlias(true);
-        //设置像素矩阵，来调整大小，为了解决宽高不一致的问题。
-        float scale = Math.max(mWidth,mHeight) / Math.min(mWidth,mHeight);
-
-        Matrix matrix = new Matrix();
-        matrix.setScale(scale,scale);
-        bitMapShader.setLocalMatrix(matrix);
-
-        //canvas.drawCircle(mHeight / 2,mHeight / 2, mHeight / 2 ,mPaint);
-        //canvas.drawOval(new RectF(0 , 0, mWidth, mHeight),mPaint);
-
-        //canvas.drawRect(new Rect(0,0 , 1000, 1600),mPaint);
-
-        //通过shapeDrawable也可以实现
-        ShapeDrawable shapeDrawble = new ShapeDrawable(new OvalShape());
-        shapeDrawble.getPaint().setShader(bitMapShader);
-        shapeDrawble.setBounds(0,0,mWidth,mWidth);
-        shapeDrawble.draw(canvas);*/
-
-        /**线性渐变
-         * x0, y0, 起始点
-         *  x1, y1, 结束点
-         * int[]  mColors, 中间依次要出现的几个颜色
-         * float[] positions,数组大小跟colors数组一样大，中间依次摆放的几个颜色分别放置在那个位置上(参考比例从左往右)
-         *    tile
-         */
-		/*LinearGradient linearGradient = new LinearGradient( 0, 0,800, 800, mColors, null, Shader.TileMode.CLAMP);
-        // linearGradient = new LinearGradient(0, 0, 400, 400, mColors, null, Shader.TileMode.REPEAT);
-		mPaint.setShader(linearGradient);
-		canvas.drawRect(0, 0, 800, 800, mPaint);*/
-
-        RadialGradient mRadialGradient = new RadialGradient(300, 300, 100, mColors, null, Shader.TileMode.REPEAT);
+        RadialGradient mRadialGradient = new RadialGradient(350, 350, 100, mColors, null, Shader.TileMode.CLAMP);
 		mPaint.setShader(mRadialGradient);
-		canvas.drawCircle(300, 300, 300, mPaint);
+		canvas.drawCircle(350, 350, 300, mPaint);
 
         /*SweepGradient mSweepGradient = new SweepGradient(300, 300, mColors, null);
 		mPaint.setShader(mSweepGradient);

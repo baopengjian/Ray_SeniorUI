@@ -11,7 +11,6 @@ import android.util.AttributeSet;
 import android.widget.TextView;
 
 /**
- * Created by John on 2017/5/10.
  */
 
 public class LinearGradientTextView extends TextView{
