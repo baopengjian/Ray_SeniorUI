@@ -1,4 +1,4 @@
-package com.example.baopengjian.ray_seniorui.fourth;
+package com.example.baopengjian.ray_seniorui.fourth.view;
 
 import android.content.Context;
 import android.graphics.Canvas;

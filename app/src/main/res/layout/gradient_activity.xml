@@ -13,7 +13,7 @@
             android:layout_height="wrap_content"
             android:text="环形渲染" />
 
-        <com.example.baopengjian.ray_seniorui.fourth.RadialGradientView
+        <com.example.baopengjian.ray_seniorui.fourth.view.RadialGradientView
             android:layout_width="match_parent"
             android:layout_height="300dp" />
 
@@ -23,7 +23,7 @@
             android:layout_height="wrap_content"
             android:text="梯度渲染" />
 
-        <com.example.baopengjian.ray_seniorui.fourth.SweepGradientView
+        <com.example.baopengjian.ray_seniorui.fourth.view.SweepGradientView
             android:layout_width="match_parent"
             android:layout_height="250dp" />
 
@@ -33,7 +33,7 @@
             android:layout_height="wrap_content"
             android:text="组合渲染" />
 
-        <com.example.baopengjian.ray_seniorui.fourth.ComposeGradientView
+        <com.example.baopengjian.ray_seniorui.fourth.view.ComposeGradientView
             android:layout_width="match_parent"
             android:layout_height="200dp" />
     </LinearLayout>

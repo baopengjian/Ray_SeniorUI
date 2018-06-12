@@ -4,18 +4,17 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
-import com.example.baopengjian.ray_seniorui.fourth.view.ZoomImageView;
+import com.example.baopengjian.ray_seniorui.R;
 
-
-public class SeniorUI04_ShaderZoomActivity extends AppCompatActivity {
-
+/**
+ * Created by Ray on 2018/6/11.
+ * 倒影效果
+ */
+public class SeniorUI04_InvertedImageActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        ZoomImageView view = new ZoomImageView(this);
-        setContentView(view);
+        setContentView(R.layout.inverted_image_activity);
     }
-
-
 }
