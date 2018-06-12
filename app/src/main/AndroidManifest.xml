@@ -28,6 +28,7 @@
         <activity android:name=".fourth.SeniorUI04_GradientActivity"/>
         <activity android:name=".fourth.SeniorUI04_InvertedImageActivity"/>
         <activity android:name=".fourth.SeniorUI04_RadarActivity"/>
+        <activity android:name=".fourth.SeniorUI04_RippleActivity"/>
     </application>
 
 </manifest>
