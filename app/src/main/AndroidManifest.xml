@@ -26,7 +26,7 @@
         <activity android:name=".fourth.SeniorUI04_LinearGradientActivity"/>
         <activity android:name=".fourth.SeniorUI04_ShaderZoomActivity"/>
         <activity android:name=".fourth.SeniorUI04_GradientActivity"/>
-        <activity android:name=".fourth.SeniorUI04_InvertedImageActivity"/>
+        <activity android:name=".fifth.activity.SeniorUI05_InvertedImageActivity"/>
         <activity android:name=".fourth.SeniorUI04_RadarActivity"/>
         <activity android:name=".fourth.SeniorUI04_RippleActivity"/>
     </application>

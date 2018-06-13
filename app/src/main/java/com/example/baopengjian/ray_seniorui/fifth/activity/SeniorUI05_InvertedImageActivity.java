@@ -1,4 +1,4 @@
-package com.example.baopengjian.ray_seniorui.fourth;
+package com.example.baopengjian.ray_seniorui.fifth.activity;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -10,7 +10,7 @@ import com.example.baopengjian.ray_seniorui.R;
  * Created by Ray on 2018/6/11.
  * 倒影效果
  */
-public class SeniorUI04_InvertedImageActivity extends AppCompatActivity {
+public class SeniorUI05_InvertedImageActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
