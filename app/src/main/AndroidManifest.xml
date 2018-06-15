@@ -29,6 +29,7 @@
         <activity android:name=".fifth.activity.SeniorUI05_InvertedImageActivity"/>
         <activity android:name=".fourth.SeniorUI04_RadarActivity"/>
         <activity android:name=".fourth.SeniorUI04_RippleActivity"/>
+        <activity android:name="com.example.baopengjian.ray_seniorui.TestActivity"/>
     </application>
 
 </manifest>
