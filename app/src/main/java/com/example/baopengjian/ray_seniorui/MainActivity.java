@@ -9,6 +9,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.example.baopengjian.ray_seniorui.fifth.activity.SeniorUi05_RoundImageActivity;
 import com.example.baopengjian.ray_seniorui.fifth.activity.XfermodeActivity;
 import com.example.baopengjian.ray_seniorui.fifth.activity.SeniorUI05_InvertedImageActivity;
 import com.example.baopengjian.ray_seniorui.first.SeniorUI01_DrawingProcessActivity;
@@ -31,12 +32,12 @@ public class MainActivity extends AppCompatActivity {
             SeniorUI02_FlowLayoutActivity.class, SeniorUI02_WaterFlowActivity.class,
             SeniorUI03_PaintBasicActivity.class,SeniorUI03_CircleProgressActivity.class, SeniorUI03_DashViewActivity.class, SeniorUI03_MinionActivity.class,
             SeniorUI04_ShaderZoomActivity.class, SeniorUI04_LinearGradientActivity.class,SeniorUI04_GradientActivity.class, SeniorUI04_RadarActivity.class, SeniorUI04_RippleActivity.class, SeniorUI05_InvertedImageActivity.class,
-            XfermodeActivity.class};
+            XfermodeActivity.class, SeniorUi05_RoundImageActivity.class};
     static String[] TARGETS_DESC = {"01_UI绘制流程应用_底部弹出",
             "02_UI绘制流程应用_flowLayout", "02_UI绘制流程应用_WaterfallLayout",
             "03_Paint基本使用","03_圆形进度_CircleProgressBar","03_动态破折线","03_小黄人",
             "04_BitmapShader:放大镜","04_LinearGradient:霓虹灯文字","04_环形渲染、梯度渲染、组合渲染","04_雷达图","04_水波纹效果",
-            "05_倒影效果","05_Xfermode"};
+            "05_Xfermode倒影效果","05_Xfermode","05_Xfermode圆角效果"};
 
     private Context context;
 

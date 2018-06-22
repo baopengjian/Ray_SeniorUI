@@ -31,6 +31,7 @@
         <activity android:name=".fourth.SeniorUI04_RippleActivity"/>
         <activity android:name="com.example.baopengjian.ray_seniorui.TestActivity"/>
         <activity android:name=".fifth.activity.XfermodeActivity"/>
+        <activity android:name=".fifth.activity.SeniorUi05_RoundImageActivity"/>
     </application>
 
 </manifest>
