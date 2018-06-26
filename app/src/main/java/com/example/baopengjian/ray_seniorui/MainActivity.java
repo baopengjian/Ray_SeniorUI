@@ -9,9 +9,15 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.example.baopengjian.ray_seniorui.fifth.activity.Senior05_LightBookActivity;
+import com.example.baopengjian.ray_seniorui.fifth.activity.SeniorUI05_EraserActivity;
+import com.example.baopengjian.ray_seniorui.fifth.activity.SeniorUI05_GuaGuaCardActivity;
+import com.example.baopengjian.ray_seniorui.fifth.activity.SeniorUI05_HeartMapActivity;
+import com.example.baopengjian.ray_seniorui.fifth.activity.SeniorUI05_InvertedImageActivity;
+import com.example.baopengjian.ray_seniorui.fifth.activity.SeniorUI05_TwitterViewActivity;
+import com.example.baopengjian.ray_seniorui.fifth.activity.SeniorUI05_WaveViewActivity;
 import com.example.baopengjian.ray_seniorui.fifth.activity.SeniorUi05_RoundImageActivity;
 import com.example.baopengjian.ray_seniorui.fifth.activity.XfermodeActivity;
-import com.example.baopengjian.ray_seniorui.fifth.activity.SeniorUI05_InvertedImageActivity;
 import com.example.baopengjian.ray_seniorui.first.SeniorUI01_DrawingProcessActivity;
 import com.example.baopengjian.ray_seniorui.fourth.SeniorUI04_GradientActivity;
 import com.example.baopengjian.ray_seniorui.fourth.SeniorUI04_LinearGradientActivity;
@@ -30,14 +36,16 @@ public class MainActivity extends AppCompatActivity {
 
     static Class[] TARGETS = {SeniorUI01_DrawingProcessActivity.class,
             SeniorUI02_FlowLayoutActivity.class, SeniorUI02_WaterFlowActivity.class,
-            SeniorUI03_PaintBasicActivity.class,SeniorUI03_CircleProgressActivity.class, SeniorUI03_DashViewActivity.class, SeniorUI03_MinionActivity.class,
-            SeniorUI04_ShaderZoomActivity.class, SeniorUI04_LinearGradientActivity.class,SeniorUI04_GradientActivity.class, SeniorUI04_RadarActivity.class, SeniorUI04_RippleActivity.class, SeniorUI05_InvertedImageActivity.class,
-            XfermodeActivity.class, SeniorUi05_RoundImageActivity.class};
+            SeniorUI03_PaintBasicActivity.class, SeniorUI03_CircleProgressActivity.class, SeniorUI03_DashViewActivity.class, SeniorUI03_MinionActivity.class,
+            SeniorUI04_ShaderZoomActivity.class, SeniorUI04_LinearGradientActivity.class, SeniorUI04_GradientActivity.class, SeniorUI04_RadarActivity.class, SeniorUI04_RippleActivity.class, XfermodeActivity.class,
+            SeniorUI05_InvertedImageActivity.class, SeniorUi05_RoundImageActivity.class, SeniorUI05_HeartMapActivity.class, SeniorUI05_EraserActivity.class, SeniorUI05_GuaGuaCardActivity.class, SeniorUI05_WaveViewActivity.class,
+            Senior05_LightBookActivity.class, SeniorUI05_TwitterViewActivity.class};
     static String[] TARGETS_DESC = {"01_UI绘制流程应用_底部弹出",
             "02_UI绘制流程应用_flowLayout", "02_UI绘制流程应用_WaterfallLayout",
-            "03_Paint基本使用","03_圆形进度_CircleProgressBar","03_动态破折线","03_小黄人",
-            "04_BitmapShader:放大镜","04_LinearGradient:霓虹灯文字","04_环形渲染、梯度渲染、组合渲染","04_雷达图","04_水波纹效果",
-            "05_Xfermode倒影效果","05_Xfermode","05_Xfermode圆角效果"};
+            "03_Paint基本使用", "03_圆形进度_CircleProgressBar", "03_动态破折线", "03_小黄人",
+            "04_BitmapShader:放大镜", "04_LinearGradient:霓虹灯文字", "04_环形渲染、梯度渲染、组合渲染", "04_雷达图", "04_水波纹效果",
+            "05_Xfermode", "05_Xfermode倒影效果", "05_Xfermode圆角效果", "05_Xfermode心电图效果", "05_Xfermode橡皮檫效果", "05_刮刮卡效果",
+            "05_Xfermode波浪效果", "05_Xfermode书柜效果", "05_Xfermode_TwitterView"};
 
     private Context context;
 
@@ -58,8 +66,8 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public void nonstop(View view){
-        startActivity(new Intent(MainActivity.this,TestActivity.class));
+    public void nonstop(View view) {
+        startActivity(new Intent(MainActivity.this, TestActivity.class));
     }
 
 }

@@ -14,16 +14,17 @@ import android.view.View;
 import com.example.baopengjian.ray_seniorui.R;
 
 /**
+ * Created by john on 2017/5/9.
  */
-public class InvertedImageView_SRCIN  extends View {
+public class InvertedImageView_SRCATOP extends View {
     private Paint mBitPaint;
     private Bitmap BmpDST,BmpSRC,BmpRevert;
-    public InvertedImageView_SRCIN(Context context, AttributeSet attrs) {
+    public InvertedImageView_SRCATOP(Context context, AttributeSet attrs) {
         super(context, attrs);
         setLayerType(View.LAYER_TYPE_SOFTWARE, null);
         mBitPaint = new Paint();
-        BmpDST = BitmapFactory.decodeResource(getResources(),R.drawable.invert_shade,null);
-        BmpSRC = BitmapFactory.decodeResource(getResources(), R.drawable.xyjy6,null);
+        BmpDST = BitmapFactory.decodeResource(getResources(), R.drawable.invert_shade,null);
+        BmpSRC = BitmapFactory.decodeResource(getResources(),R.drawable.xyjy6,null);
 
         Matrix matrix = new Matrix();
         matrix.setScale(1F, -1F);
@@ -35,7 +36,7 @@ public class InvertedImageView_SRCIN  extends View {
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
 
-        //先画出原图
+        //先画出小狗图片
         canvas.drawBitmap(BmpSRC,0,0,mBitPaint);
 
         //再画出倒影

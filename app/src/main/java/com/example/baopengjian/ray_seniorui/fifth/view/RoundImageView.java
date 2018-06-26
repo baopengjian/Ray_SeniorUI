@@ -15,6 +15,12 @@ import com.example.baopengjian.ray_seniorui.R;
 
 /**
  * Created by Ray on 2018/6/21.
+ * Requirement：	自定义控件实现圆角效果
+ * Theory：
+ *          - 利用Xfermode的效果，先画一个圆形的图片Dst（圆角外透明，取其透明度Da）
+ *          - 设置paint的Xfermode为PorterDuff.Mode.SRC_IN（[Sa * Da, Sc * Da]）
+ *          -  画要显示的图片Src
+ *          -  canvas.restoreToCount(layerId)显示
  */
 public class RoundImageView extends View {
 
