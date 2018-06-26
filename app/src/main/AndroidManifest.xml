@@ -33,7 +33,6 @@
         <activity android:name=".fifth.activity.XfermodeActivity"/>
         <activity android:name=".fifth.activity.SeniorUi05_RoundImageActivity"/>
         <activity android:name=".fifth.activity.SeniorUI05_HeartMapActivity"/>
-        <activity android:name=".fifth.activity.SeniorUI05_EraserActivity"/>
         <activity android:name=".fifth.activity.SeniorUI05_GuaGuaCardActivity"/>
         <activity android:name=".fifth.activity.SeniorUI05_WaveViewActivity"/>
         <activity android:name=".fifth.activity.Senior05_LightBookActivity"/>
