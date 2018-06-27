@@ -44,7 +44,7 @@ public class InvertedImageView_SRCATOP extends View {
         canvas.translate(0,BmpSRC.getHeight());
 
         canvas.drawBitmap(BmpDST,0,0,mBitPaint);
-        mBitPaint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.SRC_IN));
+        mBitPaint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.SRC_ATOP));
         canvas.drawBitmap(BmpRevert,0,0,mBitPaint);
 
         mBitPaint.setXfermode(null);

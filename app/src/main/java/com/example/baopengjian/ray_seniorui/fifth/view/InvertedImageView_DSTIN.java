@@ -36,7 +36,7 @@ public class InvertedImageView_DSTIN extends View {
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
 
-        //先画出小狗图片
+        //先画出原图片
         canvas.drawBitmap(BmpDST,0,0,mBitPaint);
 
         //再画出倒影
