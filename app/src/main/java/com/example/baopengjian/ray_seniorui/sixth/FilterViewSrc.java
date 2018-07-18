@@ -50,23 +50,16 @@ public class FilterViewSrc extends View {
         RectF rectF = new RectF(0,100,bitmap.getWidth(),bitmap.getHeight());
         paint.reset();
         paint.setColor(Color.RED);
-        //canvas.drawRect(rectF,paint);
-
-        //canvas.translate(600,0);
-
-        //
 
 
 
         /**
-         * Create an emboss maskfilter
-         *
          * @param direction  指定光源的位置，长度为xxx的数组标量[x,y,z]
          * @param ambient    环境光的因子 （0~1），越接近0，环境光越暗
          * @param specular   镜面反射系数 越接近0，镜面反射越强
          * @param blurRadius 模糊半径 值越大，模糊效果越明显
          */
-        //paint.setMaskFilter(new EmbossMaskFilter(new float[]{1,1,1},0.2f,60,80));
+        //
 
         //canvas.drawRect(rectF,paint);
         canvas.drawBitmap(bitmap,null, rectF,paint);

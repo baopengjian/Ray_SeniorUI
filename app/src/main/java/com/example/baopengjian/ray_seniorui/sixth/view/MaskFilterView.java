@@ -4,6 +4,7 @@ import android.content.Context;
 import android.graphics.BlurMaskFilter;
 import android.graphics.Canvas;
 import android.graphics.Color;
+import android.graphics.EmbossMaskFilter;
 import android.graphics.Paint;
 import android.graphics.RectF;
 import android.support.annotation.Nullable;
@@ -12,24 +13,27 @@ import android.view.View;
 
 /**
  * Created by John on 2017/5/15.
- * BlurMaskFilter 模糊阴影
+ * <p>
+ * BlurMaskFilter 模糊阴影 + EmbossMaskFilter
+ * paint.setMaskFilter(new BlurMaskFilter(20, BlurMaskFilter.Blur.NORMAL));
+ * paint.setMaskFilter(new EmbossMaskFilter(direction,ambient,specular,blurRadius)
  */
 
-public class BlurMaskFilterView extends View {
+public class MaskFilterView extends View {
 
     private Paint paint;
     private RectF rectF;
 
 
-    public BlurMaskFilterView(Context context) {
+    public MaskFilterView(Context context) {
         this(context, null);
     }
 
-    public BlurMaskFilterView(Context context, @Nullable AttributeSet attrs) {
+    public MaskFilterView(Context context, @Nullable AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public BlurMaskFilterView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public MaskFilterView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         init();
     }
@@ -51,7 +55,9 @@ public class BlurMaskFilterView extends View {
         drawBlurMaskFilterSolid(canvas);
         drawBlurMaskFilterOuter(canvas);
         drawBlurMaskFilterInner(canvas);
+        drawEmbossMaskFilter(canvas);
     }
+
 
     private void drawSrc(Canvas canvas) {
         canvas.translate(50, 0);
@@ -96,4 +102,21 @@ public class BlurMaskFilterView extends View {
         canvas.drawRect(rectF, paint);
         canvas.drawText("INNER", 0, 250, paint);
     }
+
+
+    /**
+     *  direction  指定光源的位置，长度为xxx的数组标量[x,y,z]
+     *  ambient    环境光的因子 （0~1），越接近0，环境光越暗
+     *  specular   镜面反射系数 越接近0，镜面反射越强
+     *  blurRadius 模糊半径 值越大，模糊效果越明显
+     *  paint.setMaskFilter(new EmbossMaskFilter(direction,ambient,specular,blurRadius)
+     */
+    private void drawEmbossMaskFilter(Canvas canvas) {
+        canvas.translate(-600,300);
+        rectF = new RectF(0, 0, 200, 200);
+        paint.setMaskFilter(new EmbossMaskFilter(new float[]{1,1,1},0.2f,60,80));
+        canvas.drawRect(rectF, paint);
+        canvas.drawText("EmbossMaskFilter", 300, 100, paint);
+    }
+
 }
