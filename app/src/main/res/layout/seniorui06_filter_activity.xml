@@ -1,11 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    >
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <TextView
+        android:text="BlurMaskFilter(不同Style)+EmbossMaskFilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
     <com.example.baopengjian.ray_seniorui.sixth.view.MaskFilterView
         android:layout_width="match_parent"
         android:layout_height="200dp" />
-
-
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:text="MatrixColorFilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <com.example.baopengjian.ray_seniorui.sixth.view.ColorMatrixColorFilterView
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        />
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:text="colorMartrix.setRotate（原图vs效果图）"
+        android:layout_height="wrap_content" />
+    <com.example.baopengjian.ray_seniorui.sixth.view.ColorMatrixColorFilterView2
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        />
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:text="PorterDuffColorFilter"
+        android:layout_height="wrap_content" />
+    <com.example.baopengjian.ray_seniorui.sixth.view.PorterDuffColorFilterView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        />
+</LinearLayout>
+</ScrollView>

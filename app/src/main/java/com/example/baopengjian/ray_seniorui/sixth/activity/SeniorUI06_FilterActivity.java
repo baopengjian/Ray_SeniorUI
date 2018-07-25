@@ -16,6 +16,8 @@ public class SeniorUI06_FilterActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.seniorui06_filter_activity);
+
+
     }
 
 }
