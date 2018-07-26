@@ -37,6 +37,7 @@
         <activity android:name=".fifth.activity.SeniorUI05_WaveViewActivity"/>
         <activity android:name=".fifth.activity.Senior05_LightBookActivity"/>
         <activity android:name=".sixth.activity.SeniorUI06_FilterActivity"/>
+        <activity android:name=".seventh.SeniorUI07_CanvasEmployActivity"/>
     </application>
 
 </manifest>
