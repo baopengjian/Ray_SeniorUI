@@ -10,20 +10,19 @@ import android.util.AttributeSet;
 import android.view.View;
 
 /**
- * Created by John on 2017/5/17.
  */
 
-public class MyView3 extends View {
+public class LayerView extends View {
 
-    public MyView3(Context context) {
+    public LayerView(Context context) {
         super(context);
     }
 
-    public MyView3(Context context, @Nullable AttributeSet attrs) {
+    public LayerView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
     }
 
-    public MyView3(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public LayerView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
     }
 
@@ -41,12 +40,10 @@ public class MyView3 extends View {
         canvas.translate(50,50);
 
         canvas.saveLayer(0,0,canvas.getWidth(),canvas.getHeight(),null,Canvas.ALL_SAVE_FLAG);
-        //canvas.save();
         canvas.drawColor(Color.BLUE);// 通过drawColor可以发现saveLayer是新建了一个图层，
                                     // 同时结合Lsn5的16种Xfermode叠加形式Demo可以验证是新建的透明图层
         paint.setColor(Color.YELLOW);
         canvas.drawRect(rectF,paint);
-        //canvas.restore();
         canvas.restore();
 
         RectF rectF1 = new RectF(10,10,300,400);

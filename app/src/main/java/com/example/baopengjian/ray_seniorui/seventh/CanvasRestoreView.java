@@ -14,10 +14,12 @@ import android.view.View;
 import com.example.baopengjian.ray_seniorui.R;
 
 /**
- * Created by John on 2017/5/16.
+ * canvas.save();和 canvas.restore()/ canvas.restoreToCount(int saveCount)
+ * save将状态保留到一个栈中restore和restoreToCount则是将状态恢复到相应的栈
+ *
  */
 
-public class MyView extends View {
+public class CanvasRestoreView extends View {
 
 
     private static final String TAG = "MyView";
@@ -25,17 +27,17 @@ public class MyView extends View {
     private Paint mPaint = null;
     private Bitmap mBitmap = null;
 
-    public MyView(Context context) {
+    public CanvasRestoreView(Context context) {
         this(context, null);
     }
 
-    public MyView(Context context, AttributeSet attrs) {
+    public CanvasRestoreView(Context context, AttributeSet attrs) {
         super(context, attrs);
         mBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.lsj);
         init();
     }
 
-    public MyView(Context context, AttributeSet attrs, int defStyleAttr) {
+    public CanvasRestoreView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
     }
 
@@ -50,43 +52,34 @@ public class MyView extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         canvas.save();
-        Log.d(TAG, "Current SaveCount = " + canvas.getSaveCount());
+        Log.i(TAG, "Current SaveCount = " + canvas.getSaveCount());
+        //打印结果：Current SaveCount = 2
 
-        canvas.translate(400, 400);
-        RectF rectF = new RectF(0,0,600,600);
-
-        //canvas.drawBitmap(mBitmap, 0, 0, mPaint);
+        canvas.translate(200, 200);
+        RectF rectF = new RectF(0,0,300,300);
         canvas.drawBitmap(mBitmap, null, rectF, mPaint);
 
         canvas.save();
-        Log.d(TAG, "Current SaveCount = " + canvas.getSaveCount());
-
+        Log.i(TAG, "Current SaveCount = " + canvas.getSaveCount());
+        //打印结果：Current SaveCount = 3
         canvas.rotate(45);
-        //canvas.drawBitmap(mBitmap, 0, 0, mPaint);
         canvas.drawBitmap(mBitmap, null, rectF, mPaint);
 
         canvas.save();
-        Log.d(TAG, "Current SaveCount = " + canvas.getSaveCount());
-
+        Log.i(TAG, "Current SaveCount = " + canvas.getSaveCount());
+        //打印结果：Current SaveCount = 4
         canvas.rotate(45);
-        //canvas.drawBitmap(mBitmap, 0, 0, mPaint);
         canvas.drawBitmap(mBitmap, null, rectF, mPaint);
-
-        canvas.save();
-        Log.d(TAG, "Current SaveCount = " + canvas.getSaveCount());
 
         canvas.restoreToCount(1);
-        Log.d(TAG, "Current SaveCount = " + canvas.getSaveCount());
-
-        canvas.translate(0, 200);
-        //canvas.drawBitmap(mBitmap, 0, 0, mPaint);
-        //rectF = new RectF(0,0,600,600);
+        Log.i(TAG, "Current SaveCount = " + canvas.getSaveCount());
+        //打印结果：Current SaveCount =1
+        canvas.translate(0, 100);
         canvas.drawBitmap(mBitmap, null, rectF, mPaint);
 
-        canvas.restoreToCount(3);
-        Log.d(TAG, "Current SaveCount = " + canvas.getSaveCount());
+       canvas.restoreToCount(3);
+        Log.i(TAG, "Current SaveCount = " + canvas.getSaveCount());
+        //打印结果：Current SaveCount =1
         canvas.drawBitmap(mBitmap, null, rectF, mPaint);
-
-
     }
 }
