@@ -9,6 +9,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.example.baopengjian.ray_seniorui.eighth.SeniorUI08_CanvasCaseActivity;
 import com.example.baopengjian.ray_seniorui.fifth.activity.Senior05_LightBookActivity;
 import com.example.baopengjian.ray_seniorui.fifth.activity.SeniorUI05_GuaGuaCardActivity;
 import com.example.baopengjian.ray_seniorui.fifth.activity.SeniorUI05_HeartMapActivity;
@@ -41,7 +42,8 @@ public class MainActivity extends AppCompatActivity {
             SeniorUI05_InvertedImageActivity.class, SeniorUi05_RoundImageActivity.class, SeniorUI05_HeartMapActivity.class, SeniorUI05_GuaGuaCardActivity.class, SeniorUI05_WaveViewActivity.class,
             Senior05_LightBookActivity.class,
             SeniorUI06_FilterActivity.class,
-            SeniorUI07_CanvasEmployActivity.class};
+            SeniorUI07_CanvasEmployActivity.class,
+            SeniorUI08_CanvasCaseActivity.class};
     static String[] TARGETS_DESC = {"01_UI绘制流程应用_底部弹出",
             "02_UI绘制流程应用_flowLayout", "02_UI绘制流程应用_WaterfallLayout",
             "03_Paint基本使用", "03_圆形进度_CircleProgressBar", "03_动态破折线", "03_小黄人",
@@ -49,7 +51,8 @@ public class MainActivity extends AppCompatActivity {
             "05_Xfermode", "05_Xfermode倒影效果", "05_Xfermode圆角效果", "05_Xfermode心电图效果", "05_刮刮卡效果",
             "05_Xfermode波浪效果", "05_Xfermode书柜效果",
             "06_Filter滤镜效果",
-            "07_canvas使用"};
+            "07_canvas使用",
+            "08_canvas实战"};
 
     private Context context;
 

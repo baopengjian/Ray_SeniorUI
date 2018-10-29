@@ -38,6 +38,10 @@
         <activity android:name=".fifth.activity.Senior05_LightBookActivity"/>
         <activity android:name=".sixth.activity.SeniorUI06_FilterActivity"/>
         <activity android:name=".seventh.SeniorUI07_CanvasEmployActivity"/>
+        <activity android:name=".eighth.SeniorUI08_CanvasCaseActivity"/>
+        <activity android:name=".eighth.DrawingBoardActivity"/>
+        <activity android:name=".eighth.RevealViewActivity"/>
+        <activity android:name=".eighth.SearchViewActivity"/>
     </application>
 
 </manifest>
