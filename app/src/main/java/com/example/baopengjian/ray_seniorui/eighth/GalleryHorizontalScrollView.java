@@ -3,7 +3,6 @@ package com.example.baopengjian.ray_seniorui.eighth;
 import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
-import android.view.MotionEvent;
 import android.view.View;
 import android.widget.HorizontalScrollView;
 import android.widget.ImageView;
@@ -12,7 +11,7 @@ import android.widget.LinearLayout;
 /**
  * Created by Ray on 2018/10/9.
  */
-public class GalleryHorizontalScrollView extends HorizontalScrollView implements View.OnTouchListener {
+public class GalleryHorizontalScrollView extends HorizontalScrollView  {
 
     private LinearLayout container;
     private int centerX;
@@ -40,7 +39,6 @@ public class GalleryHorizontalScrollView extends HorizontalScrollView implements
         );
         container = new LinearLayout(getContext());
         container.setLayoutParams(params);
-        setOnTouchListener(this);
     }
 
     @Override
@@ -53,13 +51,11 @@ public class GalleryHorizontalScrollView extends HorizontalScrollView implements
         container.setPadding(centerX,0,centerX,0);
     }
 
-    @Override
-    public boolean onTouch(View v, MotionEvent event) {
-        if(event.getAction() == MotionEvent.ACTION_MOVE){
 
-            reveal();
-        }
-        return false;
+    @Override
+    protected void onScrollChanged(int l, int t, int oldl, int oldt) {
+        super.onScrollChanged(l, t, oldl, oldt);
+        reveal();
     }
 
     private void reveal(){
