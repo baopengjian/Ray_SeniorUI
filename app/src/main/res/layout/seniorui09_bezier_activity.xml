@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#666666"
+  >
+    <!--android:clipChildren="false"-->
+    <com.example.baopengjian.ray_seniorui.ninth.DragBubbleView
+        android:id="@+id/drag_buddle_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:bubble_text="12"
+        app:bubble_textColor="#ffffff"
+        app:bubble_textSize="12dp"
+        app:bubble_radius="12dp"
+        app:bubble_color="#ff0000"
+        />
+
+    <Button
+        android:id="@+id/reset_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:textColor="#666666"
+        android:text="还原" />
+
+</RelativeLayout>

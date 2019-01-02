@@ -23,6 +23,7 @@ import com.example.baopengjian.ray_seniorui.fourth.SeniorUI04_LinearGradientActi
 import com.example.baopengjian.ray_seniorui.fourth.SeniorUI04_RadarActivity;
 import com.example.baopengjian.ray_seniorui.fourth.SeniorUI04_RippleActivity;
 import com.example.baopengjian.ray_seniorui.fourth.SeniorUI04_ShaderZoomActivity;
+import com.example.baopengjian.ray_seniorui.ninth.SeniorUI09_BezierActivity;
 import com.example.baopengjian.ray_seniorui.second.SeniorUI02_FlowLayoutActivity;
 import com.example.baopengjian.ray_seniorui.second.SeniorUI02_WaterFlowActivity;
 import com.example.baopengjian.ray_seniorui.seventh.SeniorUI07_CanvasEmployActivity;
@@ -43,7 +44,8 @@ public class MainActivity extends AppCompatActivity {
             Senior05_LightBookActivity.class,
             SeniorUI06_FilterActivity.class,
             SeniorUI07_CanvasEmployActivity.class,
-            SeniorUI08_CanvasCaseActivity.class};
+            SeniorUI08_CanvasCaseActivity.class,
+            SeniorUI09_BezierActivity.class};
     static String[] TARGETS_DESC = {"01_UI绘制流程应用_底部弹出",
             "02_UI绘制流程应用_flowLayout", "02_UI绘制流程应用_WaterfallLayout",
             "03_Paint基本使用", "03_圆形进度_CircleProgressBar", "03_动态破折线", "03_小黄人",
@@ -52,7 +54,8 @@ public class MainActivity extends AppCompatActivity {
             "05_Xfermode波浪效果", "05_Xfermode书柜效果",
             "06_Filter滤镜效果",
             "07_canvas使用",
-            "08_canvas实战"};
+            "08_canvas实战",
+            "09_贝塞尔曲线"};
 
     private Context context;
 
