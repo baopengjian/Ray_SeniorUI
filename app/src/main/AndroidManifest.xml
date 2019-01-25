@@ -16,33 +16,37 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".tenth.WaveViewActivity"/>
+        <activity android:name=".tenth.LoadingViewActivity"/>
+        <activity android:name=".tenth.PathMeasureBasicActivity" />
+        <activity android:name=".tenth.SeniorUI10_PathMeasureActivity" />
         <activity android:name=".first.SeniorUI01_DrawingProcessActivity" />
-        <activity android:name=".second.SeniorUI02_FlowLayoutActivity"/>
-        <activity android:name=".second.SeniorUI02_WaterFlowActivity"/>
-        <activity android:name=".third.circle.SeniorUI03_CircleProgressActivity"/>
-        <activity android:name=".third.basic.SeniorUI03_PaintBasicActivity"/>
-        <activity android:name=".third.basic.SeniorUI03_DashViewActivity"/>
-        <activity android:name=".third.minion.SeniorUI03_MinionActivity"/>
-        <activity android:name=".fourth.SeniorUI04_LinearGradientActivity"/>
-        <activity android:name=".fourth.SeniorUI04_ShaderZoomActivity"/>
-        <activity android:name=".fourth.SeniorUI04_GradientActivity"/>
-        <activity android:name=".fifth.activity.SeniorUI05_InvertedImageActivity"/>
-        <activity android:name=".fourth.SeniorUI04_RadarActivity"/>
-        <activity android:name=".fourth.SeniorUI04_RippleActivity"/>
-        <activity android:name="com.example.baopengjian.ray_seniorui.TestActivity"/>
-        <activity android:name=".fifth.activity.XfermodeActivity"/>
-        <activity android:name=".fifth.activity.SeniorUi05_RoundImageActivity"/>
-        <activity android:name=".fifth.activity.SeniorUI05_HeartMapActivity"/>
-        <activity android:name=".fifth.activity.SeniorUI05_GuaGuaCardActivity"/>
-        <activity android:name=".fifth.activity.SeniorUI05_WaveViewActivity"/>
-        <activity android:name=".fifth.activity.Senior05_LightBookActivity"/>
-        <activity android:name=".sixth.activity.SeniorUI06_FilterActivity"/>
-        <activity android:name=".seventh.SeniorUI07_CanvasEmployActivity"/>
-        <activity android:name=".eighth.SeniorUI08_CanvasCaseActivity"/>
-        <activity android:name=".eighth.DrawingBoardActivity"/>
-        <activity android:name=".eighth.RevealViewActivity"/>
-        <activity android:name=".eighth.SearchViewActivity"/>
-        <activity android:name=".ninth.SeniorUI09_BezierActivity"/>
+        <activity android:name=".second.SeniorUI02_FlowLayoutActivity" />
+        <activity android:name=".second.SeniorUI02_WaterFlowActivity" />
+        <activity android:name=".third.circle.SeniorUI03_CircleProgressActivity" />
+        <activity android:name=".third.basic.SeniorUI03_PaintBasicActivity" />
+        <activity android:name=".third.basic.SeniorUI03_DashViewActivity" />
+        <activity android:name=".third.minion.SeniorUI03_MinionActivity" />
+        <activity android:name=".fourth.SeniorUI04_LinearGradientActivity" />
+        <activity android:name=".fourth.SeniorUI04_ShaderZoomActivity" />
+        <activity android:name=".fourth.SeniorUI04_GradientActivity" />
+        <activity android:name=".fifth.activity.SeniorUI05_InvertedImageActivity" />
+        <activity android:name=".fourth.SeniorUI04_RadarActivity" />
+        <activity android:name=".fourth.SeniorUI04_RippleActivity" />
+        <activity android:name="com.example.baopengjian.ray_seniorui.TestActivity" />
+        <activity android:name=".fifth.activity.XfermodeActivity" />
+        <activity android:name=".fifth.activity.SeniorUi05_RoundImageActivity" />
+        <activity android:name=".fifth.activity.SeniorUI05_HeartMapActivity" />
+        <activity android:name=".fifth.activity.SeniorUI05_GuaGuaCardActivity" />
+        <activity android:name=".fifth.activity.SeniorUI05_WaveViewActivity" />
+        <activity android:name=".fifth.activity.Senior05_LightBookActivity" />
+        <activity android:name=".sixth.activity.SeniorUI06_FilterActivity" />
+        <activity android:name=".seventh.SeniorUI07_CanvasEmployActivity" />
+        <activity android:name=".eighth.SeniorUI08_CanvasCaseActivity" />
+        <activity android:name=".eighth.DrawingBoardActivity" />
+        <activity android:name=".eighth.RevealViewActivity" />
+        <activity android:name=".eighth.SearchViewActivity" />
+        <activity android:name=".ninth.SeniorUI09_BezierActivity" />
     </application>
 
 </manifest>

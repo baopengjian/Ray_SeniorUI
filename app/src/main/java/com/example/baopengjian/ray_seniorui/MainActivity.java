@@ -28,6 +28,8 @@ import com.example.baopengjian.ray_seniorui.second.SeniorUI02_FlowLayoutActivity
 import com.example.baopengjian.ray_seniorui.second.SeniorUI02_WaterFlowActivity;
 import com.example.baopengjian.ray_seniorui.seventh.SeniorUI07_CanvasEmployActivity;
 import com.example.baopengjian.ray_seniorui.sixth.activity.SeniorUI06_FilterActivity;
+import com.example.baopengjian.ray_seniorui.tenth.PathMeasureBasicActivity;
+import com.example.baopengjian.ray_seniorui.tenth.SeniorUI10_PathMeasureActivity;
 import com.example.baopengjian.ray_seniorui.third.basic.SeniorUI03_DashViewActivity;
 import com.example.baopengjian.ray_seniorui.third.basic.SeniorUI03_PaintBasicActivity;
 import com.example.baopengjian.ray_seniorui.third.circle.SeniorUI03_CircleProgressActivity;
@@ -45,7 +47,8 @@ public class MainActivity extends AppCompatActivity {
             SeniorUI06_FilterActivity.class,
             SeniorUI07_CanvasEmployActivity.class,
             SeniorUI08_CanvasCaseActivity.class,
-            SeniorUI09_BezierActivity.class};
+            SeniorUI09_BezierActivity.class,
+            SeniorUI10_PathMeasureActivity.class};
     static String[] TARGETS_DESC = {"01_UI绘制流程应用_底部弹出",
             "02_UI绘制流程应用_flowLayout", "02_UI绘制流程应用_WaterfallLayout",
             "03_Paint基本使用", "03_圆形进度_CircleProgressBar", "03_动态破折线", "03_小黄人",
@@ -55,7 +58,8 @@ public class MainActivity extends AppCompatActivity {
             "06_Filter滤镜效果",
             "07_canvas使用",
             "08_canvas实战",
-            "09_贝塞尔曲线"};
+            "09_贝塞尔曲线",
+            "10_PathMeasure"};
 
     private Context context;
 
@@ -77,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void nonstop(View view) {
-        startActivity(new Intent(MainActivity.this, TestActivity.class));
+        startActivity(new Intent(MainActivity.this, PathMeasureBasicActivity.class));
     }
 
 }
