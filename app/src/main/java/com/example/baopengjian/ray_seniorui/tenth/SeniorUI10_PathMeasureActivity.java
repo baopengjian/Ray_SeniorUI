@@ -24,10 +24,10 @@ public class SeniorUI10_PathMeasureActivity extends AppCompatActivity {
     }
 
     public void loadingView(View v){
-
+        startActivity(new Intent(SeniorUI10_PathMeasureActivity.this,LoadingViewActivity.class));
     }
 
     public void waveView(View v){
-
+        startActivity(new Intent(SeniorUI10_PathMeasureActivity.this,WaveViewActivity.class));
     }
 }
