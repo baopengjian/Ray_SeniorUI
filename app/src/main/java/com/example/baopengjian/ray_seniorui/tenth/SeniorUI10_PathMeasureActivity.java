@@ -30,4 +30,8 @@ public class SeniorUI10_PathMeasureActivity extends AppCompatActivity {
     public void waveView(View v){
         startActivity(new Intent(SeniorUI10_PathMeasureActivity.this,WaveViewActivity.class));
     }
+
+    public void searchView(View v){
+        startActivity(new Intent(SeniorUI10_PathMeasureActivity.this,SearchViewActivity.class));
+    }
 }

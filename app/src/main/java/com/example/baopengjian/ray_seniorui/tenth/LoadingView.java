@@ -15,7 +15,6 @@ import android.view.animation.Animation;
 import android.view.animation.Transformation;
 
 /**
- * Created by John on 2017/5/24.
  */
 
 public class LoadingView extends View {
