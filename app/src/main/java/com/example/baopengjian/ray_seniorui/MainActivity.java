@@ -34,6 +34,7 @@ import com.example.baopengjian.ray_seniorui.third.basic.SeniorUI03_DashViewActiv
 import com.example.baopengjian.ray_seniorui.third.basic.SeniorUI03_PaintBasicActivity;
 import com.example.baopengjian.ray_seniorui.third.circle.SeniorUI03_CircleProgressActivity;
 import com.example.baopengjian.ray_seniorui.third.minion.SeniorUI03_MinionActivity;
+import com.example.baopengjian.ray_seniorui.twelfth.SeniorUI12SvgActivity;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -48,7 +49,8 @@ public class MainActivity extends AppCompatActivity {
             SeniorUI07_CanvasEmployActivity.class,
             SeniorUI08_CanvasCaseActivity.class,
             SeniorUI09_BezierActivity.class,
-            SeniorUI10_PathMeasureActivity.class};
+            SeniorUI10_PathMeasureActivity.class,
+            SeniorUI12SvgActivity.class};
     static String[] TARGETS_DESC = {"01_UI绘制流程应用_底部弹出",
             "02_UI绘制流程应用_flowLayout", "02_UI绘制流程应用_WaterfallLayout",
             "03_Paint基本使用", "03_圆形进度_CircleProgressBar", "03_动态破折线", "03_小黄人",
@@ -59,7 +61,8 @@ public class MainActivity extends AppCompatActivity {
             "07_canvas使用",
             "08_canvas实战",
             "09_贝塞尔曲线",
-            "10_PathMeasure"};
+            "10_PathMeasure",
+            "12_可触碰式中国地图"};
 
     private Context context;
 

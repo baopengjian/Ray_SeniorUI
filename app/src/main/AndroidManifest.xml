@@ -16,9 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".tenth.SearchViewActivity"/>
-        <activity android:name=".tenth.WaveViewActivity"/>
-        <activity android:name=".tenth.LoadingViewActivity"/>
+        <activity android:name=".tenth.SearchViewActivity" />
+        <activity android:name=".tenth.WaveViewActivity" />
+        <activity android:name=".tenth.LoadingViewActivity" />
         <activity android:name=".tenth.PathMeasureBasicActivity" />
         <activity android:name=".tenth.SeniorUI10_PathMeasureActivity" />
         <activity android:name=".first.SeniorUI01_DrawingProcessActivity" />
@@ -48,6 +48,7 @@
         <activity android:name=".eighth.RevealViewActivity" />
         <activity android:name=".eighth.SearchViewActivity" />
         <activity android:name=".ninth.SeniorUI09_BezierActivity" />
+        <activity android:name=".twelfth.SeniorUI12SvgActivity" />
     </application>
 
 </manifest>
