@@ -41,6 +41,7 @@ public class SvgChinaView extends View {
     private float scale = 1.3f;
     private Paint paint;
     private GestureDetectorCompat gestureDetectorCompat;
+    private int minWidth, minHeight;
 
     public SvgChinaView(Context context) {
         this(context, null);
@@ -59,26 +60,29 @@ public class SvgChinaView extends View {
         this.context = context;
         this.paint = new Paint();
         paint.setAntiAlias(true);
+        minHeight = context.getResources().getDimensionPixelSize(R.dimen.svg_min_height);
+        minWidth = context.getResources().getDimensionPixelSize(R.dimen.svg_min_width);
+
         loadThread.start();
-        gestureDetectorCompat = new GestureDetectorCompat(context, new GestureDetector.SimpleOnGestureListener(){
+        gestureDetectorCompat = new GestureDetectorCompat(context, new GestureDetector.SimpleOnGestureListener() {
             @Override
             public boolean onDown(MotionEvent e) {
-                handlerTouch(e.getX(),e.getY());
+                handlerTouch(e.getX(), e.getY());
                 return true;
             }
         });
     }
 
     private void handlerTouch(float x, float y) {
-        if(list != null){
+        if (list != null) {
             ProvinceItem temp = null;
-            for(ProvinceItem item:list){
-                if(item.isTouch((int)(x/scale), (int)(y/scale))){
+            for (ProvinceItem item : list) {
+                if (item.isTouch((int) (x / scale), (int) (y / scale))) {
                     temp = item;
                     break;
                 }
             }
-            if(temp != null){
+            if (temp != null) {
                 selectItem = temp;
                 postInvalidate();
             }
@@ -149,19 +153,58 @@ public class SvgChinaView extends View {
     }
 
     @Override
+    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+        int widthMode = MeasureSpec.getMode(widthMeasureSpec);
+        int width = MeasureSpec.getSize(widthMeasureSpec);
+
+        int heightMode = MeasureSpec.getMode(heightMeasureSpec);
+        int height = MeasureSpec.getSize(heightMeasureSpec);
+
+        int viewWitdh = width;
+        int viewHeight = height;
+        switch (widthMode) {
+            case MeasureSpec.EXACTLY:
+            default:
+                viewWitdh = width > minWidth ? width : minWidth;
+                break;
+            case MeasureSpec.AT_MOST:
+            case MeasureSpec.UNSPECIFIED:
+                viewWitdh = minWidth;
+                break;
+        }
+
+
+        int compHeight = (minHeight * viewWitdh / minWidth);
+        switch (heightMode) {
+            case MeasureSpec.EXACTLY:
+            default:
+                viewHeight = height;
+                break;
+            case MeasureSpec.AT_MOST:
+            case MeasureSpec.UNSPECIFIED:
+                viewHeight = height > compHeight ? height : compHeight;
+                break;
+        }
+        scale = minHeight/(float)compHeight;
+        setMeasuredDimension(MeasureSpec.makeMeasureSpec(viewWitdh,MeasureSpec.EXACTLY ),
+                MeasureSpec.makeMeasureSpec(viewHeight,MeasureSpec.EXACTLY ));
+    }
+
+    @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        if(list != null){
+        if (list != null) {
             canvas.save();
             canvas.scale(scale, scale);
-            for(ProvinceItem item:list){
-              if(item != selectItem){
-                  item.draw(canvas,paint , false);
-              }
+            for (ProvinceItem item : list) {
+                if (item != selectItem) {
+                    item.draw(canvas, paint, false);
+                }
             }
 
-            if(selectItem != null){
-                selectItem.draw(canvas,paint ,true );
+            if (selectItem != null) {
+                selectItem.draw(canvas, paint, true);
             }
         }
 

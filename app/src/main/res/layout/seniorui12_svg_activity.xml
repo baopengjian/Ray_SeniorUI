@@ -5,5 +5,5 @@
 <com.example.baopengjian.ray_seniorui.twelfth.SvgChinaView
     android:layout_width="match_parent"
     android:layout_marginTop="20dp"
-    android:layout_height="match_parent" />
+    android:layout_height="wrap_content" />
 </android.support.constraint.ConstraintLayout>
