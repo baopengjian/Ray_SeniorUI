@@ -18,6 +18,7 @@ import com.example.baopengjian.ray_seniorui.fifth.activity.SeniorUI05_WaveViewAc
 import com.example.baopengjian.ray_seniorui.fifth.activity.SeniorUi05_RoundImageActivity;
 import com.example.baopengjian.ray_seniorui.fifth.activity.XfermodeActivity;
 import com.example.baopengjian.ray_seniorui.first.SeniorUI01_DrawingProcessActivity;
+import com.example.baopengjian.ray_seniorui.fourteenth.ListViewConvertActivity;
 import com.example.baopengjian.ray_seniorui.fourth.SeniorUI04_GradientActivity;
 import com.example.baopengjian.ray_seniorui.fourth.SeniorUI04_LinearGradientActivity;
 import com.example.baopengjian.ray_seniorui.fourth.SeniorUI04_RadarActivity;
@@ -50,7 +51,8 @@ public class MainActivity extends AppCompatActivity {
             SeniorUI08_CanvasCaseActivity.class,
             SeniorUI09_BezierActivity.class,
             SeniorUI10_PathMeasureActivity.class,
-            SeniorUI12SvgActivity.class};
+            SeniorUI12SvgActivity.class,
+            ListViewConvertActivity.class};
     static String[] TARGETS_DESC = {"01_UI绘制流程应用_底部弹出",
             "02_UI绘制流程应用_flowLayout", "02_UI绘制流程应用_WaterfallLayout",
             "03_Paint基本使用", "03_圆形进度_CircleProgressBar", "03_动态破折线", "03_小黄人",
@@ -62,7 +64,8 @@ public class MainActivity extends AppCompatActivity {
             "08_canvas实战",
             "09_贝塞尔曲线",
             "10_PathMeasure",
-            "12_可触碰式中国地图"};
+            "12_可触碰式中国地图",
+            "14_ListView复用思想"};
 
     private Context context;
 

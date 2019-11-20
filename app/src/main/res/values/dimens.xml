@@ -4,4 +4,8 @@
     <dimen name="sheet_height">290dp</dimen>
     <dimen name="svg_min_height">250dp</dimen>
     <dimen name="svg_min_width">300dp</dimen>
+
+    <dimen name="shadow_size">8dip</dimen>
+    <dimen name="table_width">100dp</dimen>
+    <dimen name="table_height">40dp</dimen>
 </resources>
