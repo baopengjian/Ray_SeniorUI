@@ -50,6 +50,7 @@
         <activity android:name=".ninth.SeniorUI09_BezierActivity" />
         <activity android:name=".twelfth.SeniorUI12SvgActivity" />
         <activity android:name=".fourteenth.ListViewConvertActivity"/>
+        <activity android:name="com.example.baopengjian.ray_seniorui.fifteenth.AnimationActivity"/>
     </application>
 
 </manifest>

@@ -10,6 +10,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.example.baopengjian.ray_seniorui.eighth.SeniorUI08_CanvasCaseActivity;
+import com.example.baopengjian.ray_seniorui.fifteenth.AnimationActivity;
 import com.example.baopengjian.ray_seniorui.fifth.activity.Senior05_LightBookActivity;
 import com.example.baopengjian.ray_seniorui.fifth.activity.SeniorUI05_GuaGuaCardActivity;
 import com.example.baopengjian.ray_seniorui.fifth.activity.SeniorUI05_HeartMapActivity;
@@ -29,7 +30,6 @@ import com.example.baopengjian.ray_seniorui.second.SeniorUI02_FlowLayoutActivity
 import com.example.baopengjian.ray_seniorui.second.SeniorUI02_WaterFlowActivity;
 import com.example.baopengjian.ray_seniorui.seventh.SeniorUI07_CanvasEmployActivity;
 import com.example.baopengjian.ray_seniorui.sixth.activity.SeniorUI06_FilterActivity;
-import com.example.baopengjian.ray_seniorui.tenth.PathMeasureBasicActivity;
 import com.example.baopengjian.ray_seniorui.tenth.SeniorUI10_PathMeasureActivity;
 import com.example.baopengjian.ray_seniorui.third.basic.SeniorUI03_DashViewActivity;
 import com.example.baopengjian.ray_seniorui.third.basic.SeniorUI03_PaintBasicActivity;
@@ -52,7 +52,8 @@ public class MainActivity extends AppCompatActivity {
             SeniorUI09_BezierActivity.class,
             SeniorUI10_PathMeasureActivity.class,
             SeniorUI12SvgActivity.class,
-            ListViewConvertActivity.class};
+            ListViewConvertActivity.class,
+            AnimationActivity.class};
     static String[] TARGETS_DESC = {"01_UI绘制流程应用_底部弹出",
             "02_UI绘制流程应用_flowLayout", "02_UI绘制流程应用_WaterfallLayout",
             "03_Paint基本使用", "03_圆形进度_CircleProgressBar", "03_动态破折线", "03_小黄人",
@@ -65,7 +66,8 @@ public class MainActivity extends AppCompatActivity {
             "09_贝塞尔曲线",
             "10_PathMeasure",
             "12_可触碰式中国地图",
-            "14_ListView复用思想"};
+            "14_ListView复用思想",
+            "15_属性动画"};
 
     private Context context;
 
@@ -87,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void nonstop(View view) {
-        startActivity(new Intent(MainActivity.this, PathMeasureBasicActivity.class));
+        startActivity(new Intent(MainActivity.this, AnimationActivity.class));
     }
 
 }
