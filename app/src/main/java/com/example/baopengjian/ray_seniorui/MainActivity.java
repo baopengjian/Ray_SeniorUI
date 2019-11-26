@@ -29,6 +29,7 @@ import com.example.baopengjian.ray_seniorui.ninth.SeniorUI09_BezierActivity;
 import com.example.baopengjian.ray_seniorui.second.SeniorUI02_FlowLayoutActivity;
 import com.example.baopengjian.ray_seniorui.second.SeniorUI02_WaterFlowActivity;
 import com.example.baopengjian.ray_seniorui.seventh.SeniorUI07_CanvasEmployActivity;
+import com.example.baopengjian.ray_seniorui.sixteenth.AnimationDemoActivity;
 import com.example.baopengjian.ray_seniorui.sixth.activity.SeniorUI06_FilterActivity;
 import com.example.baopengjian.ray_seniorui.tenth.SeniorUI10_PathMeasureActivity;
 import com.example.baopengjian.ray_seniorui.third.basic.SeniorUI03_DashViewActivity;
@@ -89,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void nonstop(View view) {
-        startActivity(new Intent(MainActivity.this, AnimationActivity.class));
+        startActivity(new Intent(MainActivity.this, AnimationDemoActivity.class));
     }
 
 }
