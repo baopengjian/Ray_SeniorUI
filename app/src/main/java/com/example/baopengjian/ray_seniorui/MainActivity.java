@@ -28,8 +28,8 @@ import com.example.baopengjian.ray_seniorui.fourth.SeniorUI04_ShaderZoomActivity
 import com.example.baopengjian.ray_seniorui.ninth.SeniorUI09_BezierActivity;
 import com.example.baopengjian.ray_seniorui.second.SeniorUI02_FlowLayoutActivity;
 import com.example.baopengjian.ray_seniorui.second.SeniorUI02_WaterFlowActivity;
-import com.example.baopengjian.ray_seniorui.seventh.SeniorUI07_CanvasEmployActivity;
-import com.example.baopengjian.ray_seniorui.sixteenth.AnimationDemoActivity;
+import com.example.baopengjian.ray_seniorui.eighteenth.AnimationSplashActivity;
+import com.example.baopengjian.ray_seniorui.seventeenth.SeniorUI07_CanvasEmployActivity;
 import com.example.baopengjian.ray_seniorui.sixth.activity.SeniorUI06_FilterActivity;
 import com.example.baopengjian.ray_seniorui.tenth.SeniorUI10_PathMeasureActivity;
 import com.example.baopengjian.ray_seniorui.third.basic.SeniorUI03_DashViewActivity;
@@ -54,7 +54,8 @@ public class MainActivity extends AppCompatActivity {
             SeniorUI10_PathMeasureActivity.class,
             SeniorUI12SvgActivity.class,
             ListViewConvertActivity.class,
-            AnimationActivity.class};
+            AnimationActivity.class,
+            AnimationSplashActivity.class};
     static String[] TARGETS_DESC = {"01_UI绘制流程应用_底部弹出",
             "02_UI绘制流程应用_flowLayout", "02_UI绘制流程应用_WaterfallLayout",
             "03_Paint基本使用", "03_圆形进度_CircleProgressBar", "03_动态破折线", "03_小黄人",
@@ -68,7 +69,8 @@ public class MainActivity extends AppCompatActivity {
             "10_PathMeasure",
             "12_可触碰式中国地图",
             "14_ListView复用思想",
-            "15_属性动画"};
+            "15_属性动画",
+            "17_加载动画：多圆旋转聚合逃逸效果"};
 
     private Context context;
 
@@ -90,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void nonstop(View view) {
-        startActivity(new Intent(MainActivity.this, AnimationDemoActivity.class));
+        startActivity(new Intent(MainActivity.this, AnimationSplashActivity.class));
     }
 
 }

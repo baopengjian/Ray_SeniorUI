@@ -42,7 +42,7 @@
         <activity android:name=".fifth.activity.SeniorUI05_WaveViewActivity" />
         <activity android:name=".fifth.activity.Senior05_LightBookActivity" />
         <activity android:name=".sixth.activity.SeniorUI06_FilterActivity" />
-        <activity android:name=".seventh.SeniorUI07_CanvasEmployActivity" />
+        <activity android:name=".seventeenth.SeniorUI07_CanvasEmployActivity" />
         <activity android:name=".eighth.SeniorUI08_CanvasCaseActivity" />
         <activity android:name=".eighth.DrawingBoardActivity" />
         <activity android:name=".eighth.RevealViewActivity" />
@@ -56,6 +56,7 @@
         <activity
             android:name=".sixteenth.taobao.TaoBaoActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".eighteenth.AnimationSplashActivity"/>
     </application>
 
 </manifest>

@@ -12,7 +12,7 @@
             android:layout_width="wrap_content"
             android:text="Region"
             android:layout_height="wrap_content" />
-        <com.example.baopengjian.ray_seniorui.seventh.RegionView
+        <com.example.baopengjian.ray_seniorui.seventeenth.RegionView
             android:layout_width="match_parent"
             android:layout_height="200dp" />
         <TextView
@@ -20,7 +20,7 @@
             android:layout_width="wrap_content"
             android:text="Region.Op"
             android:layout_height="wrap_content" />
-        <com.example.baopengjian.ray_seniorui.seventh.RegionUnionView
+        <com.example.baopengjian.ray_seniorui.seventeenth.RegionUnionView
             android:layout_width="match_parent"
             android:layout_height="180dp"
             />
@@ -29,7 +29,7 @@
             android:layout_width="wrap_content"
             android:text="Canvas.clipPath"
             android:layout_height="wrap_content" />
-        <com.example.baopengjian.ray_seniorui.seventh.CanvasClipView
+        <com.example.baopengjian.ray_seniorui.seventeenth.CanvasClipView
             android:layout_marginLeft="50dp"
             android:layout_width="100dp"
             android:layout_height="100dp"
@@ -43,7 +43,7 @@
             android:layout_width="wrap_content"
             android:text="canvas.save和canvas.restoreToCount"
             android:layout_height="wrap_content" />
-        <com.example.baopengjian.ray_seniorui.seventh.CanvasRestoreView
+        <com.example.baopengjian.ray_seniorui.seventeenth.CanvasRestoreView
             android:layout_width="match_parent"
             android:layout_height="300dp"
             />
@@ -52,7 +52,7 @@
             android:layout_width="wrap_content"
             android:text="Canvas.saveLayer"
             android:layout_height="wrap_content" />
-        <com.example.baopengjian.ray_seniorui.seventh.LayerView
+        <com.example.baopengjian.ray_seniorui.seventeenth.LayerView
             android:layout_width="match_parent"
             android:layout_height="400dp"
             />
