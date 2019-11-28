@@ -11,7 +11,6 @@ import android.widget.LinearLayout;
 import com.example.baopengjian.ray_seniorui.R;
 
 /**
- * Created by ricky on 2017/6/16.
  */
 
 public class MyLinearLayout extends LinearLayout {

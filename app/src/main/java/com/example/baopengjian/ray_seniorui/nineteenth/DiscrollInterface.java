@@ -1,7 +1,6 @@
 package com.example.baopengjian.ray_seniorui.nineteenth;
 
 /**
- * Created by ricky on 2017/6/16.
  */
 
 public interface DiscrollInterface {

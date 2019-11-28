@@ -56,8 +56,9 @@
         <activity
             android:name=".sixteenth.taobao.TaoBaoActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name=".eighteenth.AnimationSplashActivity"/>
-        <activity android:name=".nineteenth.AnimationFrameworkActivity"/>
+        <activity android:name=".eighteenth.AnimationSplashActivity" />
+        <activity android:name=".nineteenth.AnimationFrameworkActivity" />
+        <activity android:name=".twentieth.ViewPagerTransformActivity" />
     </application>
 
 </manifest>

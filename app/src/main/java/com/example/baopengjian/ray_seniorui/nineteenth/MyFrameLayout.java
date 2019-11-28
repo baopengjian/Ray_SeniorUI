@@ -6,7 +6,6 @@ import android.support.annotation.NonNull;
 import android.widget.FrameLayout;
 
 /**
- * Created by ricky on 2017/6/16.
  * 执行动画--控制里面的子空间执行动画
  */
 
