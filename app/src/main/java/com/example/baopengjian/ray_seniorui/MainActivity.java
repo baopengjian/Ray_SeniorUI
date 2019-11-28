@@ -9,6 +9,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.example.baopengjian.ray_seniorui.eighteenth.AnimationSplashActivity;
 import com.example.baopengjian.ray_seniorui.eighth.SeniorUI08_CanvasCaseActivity;
 import com.example.baopengjian.ray_seniorui.fifteenth.AnimationActivity;
 import com.example.baopengjian.ray_seniorui.fifth.activity.Senior05_LightBookActivity;
@@ -25,10 +26,10 @@ import com.example.baopengjian.ray_seniorui.fourth.SeniorUI04_LinearGradientActi
 import com.example.baopengjian.ray_seniorui.fourth.SeniorUI04_RadarActivity;
 import com.example.baopengjian.ray_seniorui.fourth.SeniorUI04_RippleActivity;
 import com.example.baopengjian.ray_seniorui.fourth.SeniorUI04_ShaderZoomActivity;
+import com.example.baopengjian.ray_seniorui.nineteenth.AnimationFrameworkActivity;
 import com.example.baopengjian.ray_seniorui.ninth.SeniorUI09_BezierActivity;
 import com.example.baopengjian.ray_seniorui.second.SeniorUI02_FlowLayoutActivity;
 import com.example.baopengjian.ray_seniorui.second.SeniorUI02_WaterFlowActivity;
-import com.example.baopengjian.ray_seniorui.eighteenth.AnimationSplashActivity;
 import com.example.baopengjian.ray_seniorui.seventeenth.SeniorUI07_CanvasEmployActivity;
 import com.example.baopengjian.ray_seniorui.sixth.activity.SeniorUI06_FilterActivity;
 import com.example.baopengjian.ray_seniorui.tenth.SeniorUI10_PathMeasureActivity;
@@ -55,7 +56,8 @@ public class MainActivity extends AppCompatActivity {
             SeniorUI12SvgActivity.class,
             ListViewConvertActivity.class,
             AnimationActivity.class,
-            AnimationSplashActivity.class};
+            AnimationSplashActivity.class,
+            AnimationFrameworkActivity.class};
     static String[] TARGETS_DESC = {"01_UI绘制流程应用_底部弹出",
             "02_UI绘制流程应用_flowLayout", "02_UI绘制流程应用_WaterfallLayout",
             "03_Paint基本使用", "03_圆形进度_CircleProgressBar", "03_动态破折线", "03_小黄人",
@@ -70,7 +72,8 @@ public class MainActivity extends AppCompatActivity {
             "12_可触碰式中国地图",
             "14_ListView复用思想",
             "15_属性动画",
-            "17_加载动画：多圆旋转聚合逃逸效果"};
+            "18_加载动画：多圆旋转聚合逃逸效果",
+            "19_自定义动画框架"};
 
     private Context context;
 
@@ -92,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void nonstop(View view) {
-        startActivity(new Intent(MainActivity.this, AnimationSplashActivity.class));
+        startActivity(new Intent(MainActivity.this, AnimationFrameworkActivity.class));
     }
 
 }

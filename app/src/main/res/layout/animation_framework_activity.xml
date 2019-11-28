@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.baopengjian.ray_seniorui.nineteenth.MyScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:discrollve="http://schemas.android.com/apk/res-auto"
+    >
+    <com.example.baopengjian.ray_seniorui.nineteenth.MyLinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+       <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/tb_bg" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#007788"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            android:padding="25dp"
+            android:gravity="center"
+            android:fontFamily="serif"
+            android:text="带上您的行李箱，准备shopping！"
+            discrollve:discrollve_alpha="true"
+            />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="120dp"
+            android:layout_gravity="top|right"
+            discrollve:discrollve_translation="fromLeft|fromBottom"
+            discrollve:discrollve_alpha="true"
+            android:src="@mipmap/baggage" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            android:padding="25dp"
+            android:gravity="center"
+            android:fontFamily="serif"
+            android:text="准备好相机，这里有你想象不到的惊喜！"
+            discrollve:discrollve_fromBgColor="#ffff00"
+            discrollve:discrollve_toBgColor="#88EE66"
+            />
+
+        <ImageView
+            android:layout_width="220dp"
+            android:layout_height="110dp"
+            android:layout_gravity="right"
+            android:src="@mipmap/camera"
+            discrollve:discrollve_translation="fromRight" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:background="#D97C1F"
+            android:text="这次淘宝造物节真的来了，我们都在造，你造吗？\n
+							7月22日-7月24日\n
+							上海世博展览馆\n
+							在现场，我们造什么？"
+            android:textSize="23sp"
+            discrollve:discrollve_alpha="true"
+            discrollve:discrollve_translation="fromBottom" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/sweet"
+            discrollve:discrollve_scaleX="true"
+            discrollve:discrollve_scaleY="true"  />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/shoes"
+            discrollve:discrollve_alpha="true"
+            discrollve:discrollve_scaleX="true"
+            discrollve:discrollve_scaleY="true"
+            discrollve:discrollve_translation="fromLeft|fromBottom" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/shoes"
+            discrollve:discrollve_alpha="true"
+            discrollve:discrollve_scaleY="true"
+            discrollve:discrollve_translation="fromRight|fromTop" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/sweet"
+            discrollve:discrollve_alpha="true"
+            discrollve:discrollve_scaleY="true"
+            discrollve:discrollve_translation="fromLeft" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/camera"
+            discrollve:discrollve_scaleY="true"
+            discrollve:discrollve_translation="fromLeft" />
+
+    </com.example.baopengjian.ray_seniorui.nineteenth.MyLinearLayout>
+</com.example.baopengjian.ray_seniorui.nineteenth.MyScrollView>
