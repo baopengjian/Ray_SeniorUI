@@ -59,6 +59,12 @@
         <activity android:name=".eighteenth.AnimationSplashActivity" />
         <activity android:name=".nineteenth.AnimationFrameworkActivity" />
         <activity android:name=".twentieth.ViewPagerTransformActivity" />
+        <activity android:name=".twenty_second.RecyclerViewActivity" />
+        <activity
+            android:name=".twenty_second.RecyclerIssueActivity"
+            android:theme="@style/ToolbarTheme" />
+        <activity android:name=".twenty_second.RecyclerCacheActivity"
+            />
     </application>
 
 </manifest>

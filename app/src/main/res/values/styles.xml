@@ -14,4 +14,16 @@
         <item name="android:background">@drawable/flag_01</item>
         <item name="android:textColor">#ffffff</item>
     </style>
+
+    <style name="AppTheme2" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="ToolbarTheme" parent="AppTheme2">
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorControlNormal">@android:color/white</item>
+    </style>
 </resources>

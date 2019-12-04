@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Ray_SeniorUI</string>
+    <string name="title_scrolling_demo">Scrolling Demo</string>
+    <string name="cont_desc_dp">Display picture</string>
+    <string name="section">Section</string>
+    <string name="consider_angle">考虑角度</string>
+    <string name="ignore_child_requests">忽略child</string>
+    <string name="settings">设置</string>
 </resources>

@@ -17,7 +17,13 @@ android {
         }
     }
 }
-
+ext {
+    supportLibVersion= '25.3.1'
+    //rx
+    rxJavaVersion = '1.0.16'
+    rxAndroidVersion = '1.1.0'
+    rxBindingVersion = '0.4.0'
+}
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:appcompat-v7:26.1.0'
@@ -26,4 +32,11 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    compile "com.android.support:cardview-v7:$supportLibVersion"
+    compile "com.android.support:design:$supportLibVersion"
+    compile "io.reactivex:rxjava:$rxJavaVersion"
+    compile "io.reactivex:rxandroid:$rxAndroidVersion"
+    compile "com.jakewharton.rxbinding:rxbinding:${rxBindingVersion}"
+    compile "com.jakewharton.rxbinding:rxbinding-support-v4:${rxBindingVersion}"
+    compile "com.jakewharton.rxbinding:rxbinding-appcompat-v7:${rxBindingVersion}"
 }

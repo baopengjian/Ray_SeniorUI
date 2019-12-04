@@ -39,6 +39,7 @@ import com.example.baopengjian.ray_seniorui.third.circle.SeniorUI03_CircleProgre
 import com.example.baopengjian.ray_seniorui.third.minion.SeniorUI03_MinionActivity;
 import com.example.baopengjian.ray_seniorui.twelfth.SeniorUI12SvgActivity;
 import com.example.baopengjian.ray_seniorui.twentieth.ViewPagerTransformActivity;
+import com.example.baopengjian.ray_seniorui.twenty_second.RecyclerViewActivity;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -59,7 +60,8 @@ public class MainActivity extends AppCompatActivity {
             AnimationActivity.class,
             AnimationSplashActivity.class,
             AnimationFrameworkActivity.class,
-            ViewPagerTransformActivity.class};
+            ViewPagerTransformActivity.class,
+            RecyclerViewActivity.class};
     static String[] TARGETS_DESC = {"01_UI绘制流程应用_底部弹出",
             "02_UI绘制流程应用_flowLayout", "02_UI绘制流程应用_WaterfallLayout",
             "03_Paint基本使用", "03_圆形进度_CircleProgressBar", "03_动态破折线", "03_小黄人",
@@ -76,7 +78,8 @@ public class MainActivity extends AppCompatActivity {
             "15_属性动画",
             "18_加载动画：多圆旋转聚合逃逸效果",
             "19_自定义动画框架",
-            "20_viewPager翻转效果"};
+            "20_viewPager翻转效果",
+            "22_RecyclerView常用封装、修复RecyclerView嵌套滚动问题及优化"};
 
     private Context context;
 
@@ -98,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void nonstop(View view) {
-        startActivity(new Intent(MainActivity.this, ViewPagerTransformActivity.class));
+        startActivity(new Intent(MainActivity.this, RecyclerViewActivity.class));
     }
 
 }
