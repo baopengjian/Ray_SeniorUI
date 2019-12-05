@@ -27,4 +27,8 @@ public class RecyclerViewActivity extends AppCompatActivity {
     public void cache(View v){
         startActivity(new Intent(RecyclerViewActivity.this,RecyclerCacheActivity.class));
     }
+
+    public void header(View v){
+        startActivity(new Intent(RecyclerViewActivity.this,HeaderAndFooterActivity.class));
+    }
 }

@@ -6,16 +6,23 @@
     android:orientation="vertical">
 
     <Button
-        android:layout_marginTop="30dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="issue"
-        android:text="滑动冲突" />
+        android:layout_marginTop="30dp"
+        android:onClick="header"
+        android:text="RecyclerView添加header 和footer" />
 
     <Button
-        android:layout_marginTop="30dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:onClick="issue"
+        android:text="RecyclerView滑动冲突" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
         android:onClick="cache"
-        android:text="缓存机制" />
+        android:text="RecyclerView缓存机制" />
 </LinearLayout>

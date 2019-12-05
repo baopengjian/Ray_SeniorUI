@@ -63,8 +63,8 @@
         <activity
             android:name=".twenty_second.RecyclerIssueActivity"
             android:theme="@style/ToolbarTheme" />
-        <activity android:name=".twenty_second.RecyclerCacheActivity"
-            />
+        <activity android:name=".twenty_second.RecyclerCacheActivity" />
+        <activity android:name=".twenty_second.HeaderAndFooterActivity" />
     </application>
 
 </manifest>
