@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="#fff"
+    android:paddingLeft="5dip"
+    android:paddingRight="5dip"
+    android:paddingTop="8dip"
+    android:paddingBottom="8dip" >
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_4" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dip" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="14:31" 
+                android:layout_alignParentRight="true"
+                android:textColor="#a6a6a6"
+                android:textSize="12sp"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="5dip" >
+
+            <TextView
+                android:id="@+id/tv_lastMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+                android:layout_alignParentLeft="true"
+                android:textColor="#808080"
+                android:textSize="12sp"
+                android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:id="@+id/iv_pop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
