@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.baopengjian.ray_seniorui">
 
+    <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -65,8 +66,9 @@
             android:theme="@style/ToolbarTheme" />
         <activity android:name=".twenty_second.RecyclerCacheActivity" />
         <activity android:name=".twenty_second.HeaderAndFooterActivity" />
-        <activity android:name=".twenty_third.ItemTouchHelperActivity"/>
-        <activity android:name=".twenty_third.extension.ItemTouchExtensionActivity"/>
+        <activity android:name=".twenty_third.ItemTouchHelperActivity" />
+        <activity android:name=".twenty_third.extension.ItemTouchExtensionActivity" />
+        <activity android:name=".twenty_fourth.RecyclerViewSwipeCardActivity" />
     </application>
 
 </manifest>
