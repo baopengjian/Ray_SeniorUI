@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <Button
+        android:id="@+id/onClick"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="点击"
+
+        android:onClick="onClick"
+        android:layout_gravity="center"
+        />
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <!--内容区-->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="内容区"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            />
+        <!--c侧滑菜单  layout_gravity end-->
+        <LinearLayout
+            android:background="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="end"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="这是菜单"
+                />
+        </LinearLayout>
+
+
+    </android.support.v4.widget.DrawerLayout>
+
+
+</LinearLayout>

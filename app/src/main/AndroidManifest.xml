@@ -69,6 +69,7 @@
         <activity android:name=".twenty_third.ItemTouchHelperActivity" />
         <activity android:name=".twenty_third.extension.ItemTouchExtensionActivity" />
         <activity android:name=".twenty_fourth.RecyclerViewSwipeCardActivity" />
+        <activity android:name=".twenty_fifth.DrawerLayoutActivity"/>
     </application>
 
 </manifest>

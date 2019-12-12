@@ -39,6 +39,7 @@ import com.example.baopengjian.ray_seniorui.third.circle.SeniorUI03_CircleProgre
 import com.example.baopengjian.ray_seniorui.third.minion.SeniorUI03_MinionActivity;
 import com.example.baopengjian.ray_seniorui.twelfth.SeniorUI12SvgActivity;
 import com.example.baopengjian.ray_seniorui.twentieth.ViewPagerTransformActivity;
+import com.example.baopengjian.ray_seniorui.twenty_fifth.DrawerLayoutActivity;
 import com.example.baopengjian.ray_seniorui.twenty_fourth.RecyclerViewSwipeCardActivity;
 import com.example.baopengjian.ray_seniorui.twenty_second.RecyclerViewActivity;
 import com.example.baopengjian.ray_seniorui.twenty_third.ItemTouchHelperActivity;
@@ -67,7 +68,8 @@ public class MainActivity extends AppCompatActivity {
             RecyclerViewActivity.class,
             ItemTouchHelperActivity.class,
             ItemTouchExtensionActivity.class,
-            RecyclerViewSwipeCardActivity.class};
+            RecyclerViewSwipeCardActivity.class,
+            DrawerLayoutActivity.class};
     static String[] TARGETS_DESC = {"01_UI绘制流程应用_底部弹出",
             "02_UI绘制流程应用_flowLayout", "02_UI绘制流程应用_WaterfallLayout",
             "03_Paint基本使用", "03_圆形进度_CircleProgressBar", "03_动态破折线", "03_小黄人",
@@ -88,7 +90,8 @@ public class MainActivity extends AppCompatActivity {
             "22_RecyclerView常用封装、修复RecyclerView嵌套滚动问题及优化",
             "23_ItemTouchHelper",
             "23_ItemTouchHelper拓展item可定义移除背景",
-            "24_RecyclerViewSwipeCard陌陌滑动移除效果"};
+            "24_RecyclerViewSwipeCard陌陌滑动移除效果",
+            "25_DrawerLayout"};
 
     private Context context;
 
