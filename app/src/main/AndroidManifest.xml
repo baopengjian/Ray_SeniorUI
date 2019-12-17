@@ -70,6 +70,9 @@
         <activity android:name=".twenty_third.extension.ItemTouchExtensionActivity" />
         <activity android:name=".twenty_fourth.RecyclerViewSwipeCardActivity" />
         <activity android:name=".twenty_fifth.DrawerLayoutActivity"/>
+        <activity android:name=".twenty_sixth.SnackeBarActivity"/>
+        <activity android:name=".twenty_seventh.navigation.NavigationActivity"/>
+        <activity android:name=".twenty_seventh.navigation.ToolBarActivity"/>
     </application>
 
 </manifest>
