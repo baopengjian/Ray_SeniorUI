@@ -71,8 +71,8 @@
         <activity android:name=".twenty_fourth.RecyclerViewSwipeCardActivity" />
         <activity android:name=".twenty_fifth.DrawerLayoutActivity"/>
         <activity android:name=".twenty_sixth.SnackeBarActivity"/>
-        <activity android:name=".twenty_seventh.navigation.NavigationActivity"/>
-        <activity android:name=".twenty_seventh.navigation.ToolBarActivity"/>
+        <activity android:name=".twenty_seventh.NavigationActivity"/>
+        <activity android:name=".twenty_seventh.ToolBarActivity"/>
     </application>
 
 </manifest>

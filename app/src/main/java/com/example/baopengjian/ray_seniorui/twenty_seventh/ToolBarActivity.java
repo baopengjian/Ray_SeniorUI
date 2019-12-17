@@ -1,4 +1,4 @@
-package com.example.baopengjian.ray_seniorui.twenty_seventh.navigation;
+package com.example.baopengjian.ray_seniorui.twenty_seventh;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

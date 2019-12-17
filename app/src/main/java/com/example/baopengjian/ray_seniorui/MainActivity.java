@@ -42,8 +42,8 @@ import com.example.baopengjian.ray_seniorui.twentieth.ViewPagerTransformActivity
 import com.example.baopengjian.ray_seniorui.twenty_fifth.DrawerLayoutActivity;
 import com.example.baopengjian.ray_seniorui.twenty_fourth.RecyclerViewSwipeCardActivity;
 import com.example.baopengjian.ray_seniorui.twenty_second.RecyclerViewActivity;
-import com.example.baopengjian.ray_seniorui.twenty_seventh.navigation.NavigationActivity;
-import com.example.baopengjian.ray_seniorui.twenty_seventh.navigation.ToolBarActivity;
+import com.example.baopengjian.ray_seniorui.twenty_seventh.NavigationActivity;
+import com.example.baopengjian.ray_seniorui.twenty_seventh.ToolBarActivity;
 import com.example.baopengjian.ray_seniorui.twenty_sixth.SnackeBarActivity;
 import com.example.baopengjian.ray_seniorui.twenty_third.ItemTouchHelperActivity;
 import com.example.baopengjian.ray_seniorui.twenty_third.extension.ItemTouchExtensionActivity;
