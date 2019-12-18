@@ -69,10 +69,11 @@
         <activity android:name=".twenty_third.ItemTouchHelperActivity" />
         <activity android:name=".twenty_third.extension.ItemTouchExtensionActivity" />
         <activity android:name=".twenty_fourth.RecyclerViewSwipeCardActivity" />
-        <activity android:name=".twenty_fifth.DrawerLayoutActivity"/>
-        <activity android:name=".twenty_sixth.SnackeBarActivity"/>
-        <activity android:name=".twenty_seventh.NavigationActivity"/>
-        <activity android:name=".twenty_seventh.ToolBarActivity"/>
+        <activity android:name=".twenty_fifth.DrawerLayoutActivity" />
+        <activity android:name=".twenty_sixth.SnackeBarActivity" />
+        <activity android:name=".twenty_seventh.NavigationActivity" />
+        <activity android:name=".twenty_seventh.ToolBarActivity" />
+        <activity android:name=".twenty_eighth.TabLayoutActivity" />
     </application>
 
 </manifest>

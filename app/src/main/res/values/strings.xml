@@ -6,4 +6,6 @@
     <string name="consider_angle">考虑角度</string>
     <string name="ignore_child_requests">忽略child</string>
     <string name="settings">设置</string>
+    <string name="open">打开</string>
+    <string name="close">关闭</string>
 </resources>
