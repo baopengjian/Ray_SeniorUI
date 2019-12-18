@@ -74,6 +74,7 @@
         <activity android:name=".twenty_seventh.NavigationActivity" />
         <activity android:name=".twenty_seventh.ToolBarActivity" />
         <activity android:name=".twenty_eighth.TabLayoutActivity" />
+        <activity android:name=".twenty_eighth.bank.BankCardActivity"/>
     </application>
 
 </manifest>
