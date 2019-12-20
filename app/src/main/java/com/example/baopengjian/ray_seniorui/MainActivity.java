@@ -37,6 +37,7 @@ import com.example.baopengjian.ray_seniorui.third.basic.SeniorUI03_DashViewActiv
 import com.example.baopengjian.ray_seniorui.third.basic.SeniorUI03_PaintBasicActivity;
 import com.example.baopengjian.ray_seniorui.third.circle.SeniorUI03_CircleProgressActivity;
 import com.example.baopengjian.ray_seniorui.third.minion.SeniorUI03_MinionActivity;
+import com.example.baopengjian.ray_seniorui.thirtieth.FloatingActionButtonActivity;
 import com.example.baopengjian.ray_seniorui.twelfth.SeniorUI12SvgActivity;
 import com.example.baopengjian.ray_seniorui.twentieth.ViewPagerTransformActivity;
 import com.example.baopengjian.ray_seniorui.twenty_eighth.TabLayoutActivity;
@@ -81,7 +82,8 @@ public class MainActivity extends AppCompatActivity {
             ToolBarActivity.class,
             TabLayoutActivity.class,
             BankCardActivity.class,
-            StatusBarActivity.class};
+            StatusBarActivity.class,
+            FloatingActionButtonActivity.class};
     static String[] TARGETS_DESC = {"01_UI绘制流程应用_底部弹出",
             "02_UI绘制流程应用_flowLayout", "02_UI绘制流程应用_WaterfallLayout",
             "03_Paint基本使用", "03_圆形进度_CircleProgressBar", "03_动态破折线", "03_小黄人",
@@ -109,7 +111,8 @@ public class MainActivity extends AppCompatActivity {
             "SeniorUI27_ToolBar",
             "SeniorUI28_TabLayout",
             "SeniorUI28_Palatte应用",
-            "SeniorUI29_沉浸式状态栏"};
+            "SeniorUI29_沉浸式状态栏",
+            "SeniorUI30_floatingbuttom"};
 
     private Context context;
 
@@ -131,7 +134,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void nonstop(View view) {
-        startActivity(new Intent(MainActivity.this, StatusBarActivity.class));
+        startActivity(new Intent(MainActivity.this, FloatingActionButtonActivity.class));
     }
 
 }
