@@ -43,6 +43,7 @@ import com.example.baopengjian.ray_seniorui.twenty_eighth.TabLayoutActivity;
 import com.example.baopengjian.ray_seniorui.twenty_eighth.bank.BankCardActivity;
 import com.example.baopengjian.ray_seniorui.twenty_fifth.DrawerLayoutActivity;
 import com.example.baopengjian.ray_seniorui.twenty_fourth.RecyclerViewSwipeCardActivity;
+import com.example.baopengjian.ray_seniorui.twenty_ninth.StatusBarActivity;
 import com.example.baopengjian.ray_seniorui.twenty_second.RecyclerViewActivity;
 import com.example.baopengjian.ray_seniorui.twenty_seventh.NavigationActivity;
 import com.example.baopengjian.ray_seniorui.twenty_seventh.ToolBarActivity;
@@ -79,7 +80,8 @@ public class MainActivity extends AppCompatActivity {
             NavigationActivity.class,
             ToolBarActivity.class,
             TabLayoutActivity.class,
-            BankCardActivity.class};
+            BankCardActivity.class,
+            StatusBarActivity.class};
     static String[] TARGETS_DESC = {"01_UI绘制流程应用_底部弹出",
             "02_UI绘制流程应用_flowLayout", "02_UI绘制流程应用_WaterfallLayout",
             "03_Paint基本使用", "03_圆形进度_CircleProgressBar", "03_动态破折线", "03_小黄人",
@@ -106,7 +108,8 @@ public class MainActivity extends AppCompatActivity {
             "SeniorUI27_NavigationView",
             "SeniorUI27_ToolBar",
             "SeniorUI28_TabLayout",
-            "SeniorUI28_Palatte应用"};
+            "SeniorUI28_Palatte应用",
+            "SeniorUI29_沉浸式状态栏"};
 
     private Context context;
 
@@ -128,7 +131,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void nonstop(View view) {
-        startActivity(new Intent(MainActivity.this, BankCardActivity.class));
+        startActivity(new Intent(MainActivity.this, StatusBarActivity.class));
     }
 
 }

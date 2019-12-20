@@ -75,6 +75,8 @@
         <activity android:name=".twenty_seventh.ToolBarActivity" />
         <activity android:name=".twenty_eighth.TabLayoutActivity" />
         <activity android:name=".twenty_eighth.bank.BankCardActivity"/>
+        <activity android:name=".twenty_ninth.StatusBarActivity"
+            android:theme="@style/AppTheme3"/>
     </application>
 
 </manifest>
