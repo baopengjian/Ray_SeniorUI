@@ -79,6 +79,7 @@
             android:name=".twenty_ninth.StatusBarActivity"
             android:theme="@style/AppTheme3" />
         <activity android:name=".thirtieth.FloatingActionButtonActivity" />
+        <activity android:name=".thirtieth.AppbarLayoutActivity"/>
     </application>
 
 </manifest>
