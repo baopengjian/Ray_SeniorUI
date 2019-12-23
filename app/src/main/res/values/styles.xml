@@ -44,4 +44,9 @@
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:windowLightStatusBar">true</item>
     </style>
+
+    <declare-styleable name="BeaviorCoordinatorLayout">
+
+        <attr name="layout_behavior" format="string"/>
+    </declare-styleable>
 </resources>
