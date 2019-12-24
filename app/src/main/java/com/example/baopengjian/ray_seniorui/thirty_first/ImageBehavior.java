@@ -12,10 +12,9 @@ import com.example.baopengjian.ray_seniorui.thirty_first.design.Behavior;
  */
 public class ImageBehavior extends Behavior {
 
-    private static final String TAG = "tuch";
-    private int maxHeight =100;
-    private int originHeight;
-
+    private  int maxHeight=500;
+    private  int originHeight;
+    
     public ImageBehavior(Context context, AttributeSet set) {
         super(context, set);
     }
@@ -24,27 +23,28 @@ public class ImageBehavior extends Behavior {
     public void onLayoutFinish(View parent, View child) {
         super.onLayoutFinish(parent, child);
         if (originHeight == 0) {
-            originHeight = child.getHeight();
+            originHeight=child.getHeight();
         }
     }
 
+    //滚动方法就  在这里进行缩放
     @Override
     public void onNestedScroll(View scrollView, View target, int dxConsumed, int dyConsumed, int dxUnconsumed, int dyUnconsumed) {
-        if (scrollView.getScrollY() > 0) {
-            ViewGroup.LayoutParams params = target.getLayoutParams();
-            params.height = params.height - Math.abs(scrollView.getScrollY());
-            if (params.height < maxHeight) {
-                params.height = maxHeight;
+        if (scrollView.getScrollY() >0) {
+            ViewGroup.LayoutParams parmas=target.getLayoutParams();
+            parmas.height = parmas.height - Math.abs(dyConsumed);
+            if (parmas.height < originHeight) {
+                parmas.height=originHeight;
             }
-            target.setLayoutParams(params);
-        } else if (scrollView.getScrollY() == 0) {
+            target.setLayoutParams(parmas);
+        } else if (scrollView.getScrollY()== 0){
             ViewGroup.LayoutParams params = target.getLayoutParams();
-            params.height = params.height+Math.abs(dyUnconsumed);
-            if(params.height >= originHeight){
-                params.height = originHeight;
+            params.height = params.height+ Math.abs(dyUnconsumed);
+            if(params.height>= maxHeight){
+                params.height =maxHeight;
             }
-
             target.setLayoutParams(params);
         }
     }
 }
+

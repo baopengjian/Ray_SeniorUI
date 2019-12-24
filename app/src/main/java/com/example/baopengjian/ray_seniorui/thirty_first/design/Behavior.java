@@ -29,10 +29,10 @@ public class Behavior {
 
     }
 
-    public boolean onTouchEvent(BeaviorCoordinatorLayout parent, View child, MotionEvent ev) {
+    public boolean onTouchEvent(BehaviorCoordinatorLayout parent, View child, MotionEvent ev) {
         return false;
     }
-    public boolean onLayoutChild(BeaviorCoordinatorLayout parent, View child, int layoutDirection) {
+    public boolean onLayoutChild(BehaviorCoordinatorLayout parent, View child, int layoutDirection) {
         return false;
     }
     public boolean onStartNestedScroll(View child, View target, int nestedScrollAxes) {

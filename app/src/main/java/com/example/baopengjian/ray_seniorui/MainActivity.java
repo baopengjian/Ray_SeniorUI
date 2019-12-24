@@ -39,7 +39,7 @@ import com.example.baopengjian.ray_seniorui.third.circle.SeniorUI03_CircleProgre
 import com.example.baopengjian.ray_seniorui.third.minion.SeniorUI03_MinionActivity;
 import com.example.baopengjian.ray_seniorui.thirtieth.AppbarLayoutActivity;
 import com.example.baopengjian.ray_seniorui.thirtieth.FloatingActionButtonActivity;
-import com.example.baopengjian.ray_seniorui.thirty_first.CoodrinlayoutActivity;
+import com.example.baopengjian.ray_seniorui.thirty_first.CoordinatorLayoutActivity;
 import com.example.baopengjian.ray_seniorui.twelfth.SeniorUI12SvgActivity;
 import com.example.baopengjian.ray_seniorui.twentieth.ViewPagerTransformActivity;
 import com.example.baopengjian.ray_seniorui.twenty_eighth.TabLayoutActivity;
@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
             StatusBarActivity.class,
             FloatingActionButtonActivity.class,
             AppbarLayoutActivity.class,
-            CoodrinlayoutActivity.class};
+            CoordinatorLayoutActivity.class};
     static String[] TARGETS_DESC = {"01_UI绘制流程应用_底部弹出",
             "02_UI绘制流程应用_flowLayout", "02_UI绘制流程应用_WaterfallLayout",
             "03_Paint基本使用", "03_圆形进度_CircleProgressBar", "03_动态破折线", "03_小黄人",
@@ -140,7 +140,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void nonstop(View view) {
-        startActivity(new Intent(MainActivity.this, CoodrinlayoutActivity.class));
+        startActivity(new Intent(MainActivity.this, CoordinatorLayoutActivity.class));
     }
 
 }

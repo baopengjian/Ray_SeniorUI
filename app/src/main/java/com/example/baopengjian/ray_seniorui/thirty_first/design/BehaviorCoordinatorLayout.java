@@ -19,18 +19,18 @@ import java.lang.reflect.Constructor;
 /**
  * Created by Ray on 2019-12-23.
  */
-public class BeaviorCoordinatorLayout   extends RelativeLayout  implements ViewTreeObserver.OnGlobalLayoutListener , NestedScrollingParent {
+public class BehaviorCoordinatorLayout   extends RelativeLayout  implements ViewTreeObserver.OnGlobalLayoutListener , NestedScrollingParent {
     public float lastX;
     public float lastY;
-    public BeaviorCoordinatorLayout(Context context) {
+    public BehaviorCoordinatorLayout(Context context) {
         super(context);
     }
 
-    public BeaviorCoordinatorLayout(Context context, AttributeSet attrs) {
+    public BehaviorCoordinatorLayout(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 
-    public BeaviorCoordinatorLayout(Context context, AttributeSet attrs, int defStyleAttr) {
+    public BehaviorCoordinatorLayout(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
     }
 

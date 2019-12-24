@@ -80,7 +80,7 @@
             android:theme="@style/AppTheme3" />
         <activity android:name=".thirtieth.FloatingActionButtonActivity" />
         <activity android:name=".thirtieth.AppbarLayoutActivity"/>
-        <activity android:name=".thirty_first.CoodrinlayoutActivity"/>
+        <activity android:name=".thirty_first.CoordinatorLayoutActivity"/>
     </application>
 
 </manifest>

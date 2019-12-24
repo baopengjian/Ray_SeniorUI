@@ -10,14 +10,14 @@ import com.example.baopengjian.ray_seniorui.R;
 /**
  * Created by Ray on 2019-12-23.
  */
-public class CoodrinlayoutActivity extends AppCompatActivity {
+public class CoordinatorLayoutActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.coodrinlayout_acitivity);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setTitle("动脑学院");
+        toolbar.setTitle("自定义CoordinatorLayout");
         setSupportActionBar(toolbar);
     }
 }
