@@ -79,8 +79,11 @@
             android:name=".twenty_ninth.StatusBarActivity"
             android:theme="@style/AppTheme3" />
         <activity android:name=".thirtieth.FloatingActionButtonActivity" />
-        <activity android:name=".thirtieth.AppbarLayoutActivity"/>
-        <activity android:name=".thirty_first.CoordinatorLayoutActivity"/>
+        <activity android:name=".thirtieth.AppbarLayoutActivity" />
+        <activity android:name=".thirty_first.CoordinatorLayoutActivity" />
+        <activity android:name=".thirtieth_second.MaterialDesignAnimationActivity"
+            />
+        <activity android:name=".thirtieth_second.SecondActivity" />
     </application>
 
 </manifest>

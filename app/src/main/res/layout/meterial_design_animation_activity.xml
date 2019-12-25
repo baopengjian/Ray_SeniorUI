@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:onClick="click"
+        android:text="跳转"
+        />
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/d"
+        android:transitionName="@string/app_name"
+        />
+
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/d"
+        android:layout_marginTop="20dp"
+        android:transitionName="@string/app"
+        />
+
+
+</LinearLayout>
