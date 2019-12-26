@@ -4,5 +4,7 @@
     <item name="tag_type_view" type="id"/>
     <item name="tag_row" type="id"/>
     <item name="tag_column" type="id"/>
-
+    <item name="leftImg" type="id"/>
+    <item name="rightImg" type="id"/>
+    <item name="leftTv" type="id"/>
 </resources>

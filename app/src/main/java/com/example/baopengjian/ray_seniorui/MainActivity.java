@@ -40,6 +40,9 @@ import com.example.baopengjian.ray_seniorui.third.minion.SeniorUI03_MinionActivi
 import com.example.baopengjian.ray_seniorui.thirtieth.AppbarLayoutActivity;
 import com.example.baopengjian.ray_seniorui.thirtieth.FloatingActionButtonActivity;
 import com.example.baopengjian.ray_seniorui.thirtieth_second.MaterialDesignAnimationActivity;
+import com.example.baopengjian.ray_seniorui.thirtieth_third.AspecImageViewActivity;
+import com.example.baopengjian.ray_seniorui.thirtieth_third.CustomTextViewActivity;
+import com.example.baopengjian.ray_seniorui.thirtieth_third.DoubleImageViewActivity;
 import com.example.baopengjian.ray_seniorui.thirty_first.CoordinatorLayoutActivity;
 import com.example.baopengjian.ray_seniorui.twelfth.SeniorUI12SvgActivity;
 import com.example.baopengjian.ray_seniorui.twentieth.ViewPagerTransformActivity;
@@ -89,7 +92,10 @@ public class MainActivity extends AppCompatActivity {
             FloatingActionButtonActivity.class,
             AppbarLayoutActivity.class,
             CoordinatorLayoutActivity.class,
-            MaterialDesignAnimationActivity.class};
+            MaterialDesignAnimationActivity.class,
+            AspecImageViewActivity.class,
+            DoubleImageViewActivity.class,
+            CustomTextViewActivity.class};
     static String[] TARGETS_DESC = {"01_UI绘制流程应用_底部弹出",
             "02_UI绘制流程应用_flowLayout", "02_UI绘制流程应用_WaterfallLayout",
             "03_Paint基本使用", "03_圆形进度_CircleProgressBar", "03_动态破折线", "03_小黄人",
@@ -121,7 +127,10 @@ public class MainActivity extends AppCompatActivity {
             "SeniorUI30_floatingbuttom",
             "SeniorUI30_AppbarLayout",
             "SeniorUI31_手写CoordinatorLayout和Behavior",
-            "SeniorUI32_共享元素动画"};
+            "SeniorUI32_共享元素动画",
+            "SeniorUI33_自定义控件onMeasure",
+            "SeniorUI33_自定义控件onDraw",
+            "SeniorUI33_自定义控件：继承ViewGroup"};
 
     private Context context;
 
@@ -143,7 +152,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void nonstop(View view) {
-        startActivity(new Intent(MainActivity.this, CoordinatorLayoutActivity.class));
+        startActivity(new Intent(MainActivity.this, CustomTextViewActivity.class));
     }
 
 }

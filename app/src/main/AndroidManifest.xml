@@ -17,6 +17,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity android:name=".tenth.SearchViewActivity" />
         <activity android:name=".tenth.WaveViewActivity" />
         <activity android:name=".tenth.LoadingViewActivity" />
@@ -84,6 +85,9 @@
         <activity android:name=".thirtieth_second.MaterialDesignAnimationActivity"
             />
         <activity android:name=".thirtieth_second.SecondActivity" />
+        <activity android:name=".thirtieth_third.AspecImageViewActivity"/>
+        <activity android:name=".thirtieth_third.DoubleImageViewActivity"/>
+        <activity android:name=".thirtieth_third.CustomTextViewActivity"/>
     </application>
 
 </manifest>
