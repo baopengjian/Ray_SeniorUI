@@ -53,6 +53,8 @@ public class FlowLayout extends ViewGroup {
             int iChildHeight;
             int childCount = getChildCount();
             List<View> viewList = new ArrayList<>();
+            mViewLinesList.clear();
+            mLineHeights.clear();
             for(int i = 0 ; i < childCount ; i++){
                 View childView = getChildAt(i);
                 measureChild(childView, widthMeasureSpec,heightMeasureSpec);
@@ -132,8 +134,7 @@ public class FlowLayout extends ViewGroup {
             curLeft = 0;
             curTop += mLineHeights.get(i);
         }
-        mViewLinesList.clear();
-        mLineHeights.clear();
+
     }
 
     public interface OnItemClickListener{

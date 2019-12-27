@@ -21,7 +21,7 @@
 
         <TextView
             style="@style/text_flag_01"
-            android:text="你是我的"
+            android:text="你是我"
             android:textSize="18sp"
             />
         <TextView
@@ -38,7 +38,7 @@
 
         <TextView
             style="@style/text_flag_01"
-            android:text="我是你的"
+            android:text="我是你"
             android:textSize="20sp"
             />
 
