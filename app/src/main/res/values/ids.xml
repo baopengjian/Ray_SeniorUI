@@ -7,4 +7,6 @@
     <item name="leftImg" type="id"/>
     <item name="rightImg" type="id"/>
     <item name="leftTv" type="id"/>
+    <item name="dn_view_circle_tag" type="id"/>
+    <item name="dn_view_body_tag" type="id"/>
 </resources>

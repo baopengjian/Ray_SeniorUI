@@ -39,6 +39,7 @@ import com.example.baopengjian.ray_seniorui.third.circle.SeniorUI03_CircleProgre
 import com.example.baopengjian.ray_seniorui.third.minion.SeniorUI03_MinionActivity;
 import com.example.baopengjian.ray_seniorui.thirtieth.AppbarLayoutActivity;
 import com.example.baopengjian.ray_seniorui.thirtieth.FloatingActionButtonActivity;
+import com.example.baopengjian.ray_seniorui.thirtieth_fourth.JboxActivity;
 import com.example.baopengjian.ray_seniorui.thirtieth_second.MaterialDesignAnimationActivity;
 import com.example.baopengjian.ray_seniorui.thirtieth_third.AspecImageViewActivity;
 import com.example.baopengjian.ray_seniorui.thirtieth_third.CustomTextViewActivity;
@@ -95,7 +96,8 @@ public class MainActivity extends AppCompatActivity {
             MaterialDesignAnimationActivity.class,
             AspecImageViewActivity.class,
             DoubleImageViewActivity.class,
-            CustomTextViewActivity.class};
+            CustomTextViewActivity.class,
+            JboxActivity.class};
     static String[] TARGETS_DESC = {"01_UI绘制流程应用_底部弹出",
             "02_UI绘制流程应用_flowLayout", "02_UI绘制流程应用_WaterfallLayout",
             "03_Paint基本使用", "03_圆形进度_CircleProgressBar", "03_动态破折线", "03_小黄人",
@@ -130,7 +132,8 @@ public class MainActivity extends AppCompatActivity {
             "SeniorUI32_共享元素动画",
             "SeniorUI33_自定义控件onMeasure",
             "SeniorUI33_自定义控件onDraw",
-            "SeniorUI33_自定义控件：继承ViewGroup"};
+            "SeniorUI33_自定义控件：继承ViewGroup",
+            "SeniorUI34_jbox引擎实现重力碰撞效果"};
 
     private Context context;
 
@@ -152,7 +155,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void nonstop(View view) {
-        startActivity(new Intent(MainActivity.this, CustomTextViewActivity.class));
+        startActivity(new Intent(MainActivity.this, JboxActivity.class));
     }
 
 }
