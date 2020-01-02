@@ -1,0 +1,46 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:background="@mipmap/app_bar_layout"
+            app:layout_scrollFlags="scroll">
+
+
+        </LinearLayout>
+
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/community_container_tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                app:tabIndicatorColor="#943c41"
+                app:tabSelectedTextColor="#000000"
+                app:tabTextColor="#1d1c1d"
+                android:background="@color/colorPrimary"
+                app:tabMode="scrollable">
+            </android.support.design.widget.TabLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <com.example.baopengjian.ray_seniorui.thirty_first.apply.CustomViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    </com.example.baopengjian.ray_seniorui.thirty_first.apply.CustomViewPager>
+</android.support.design.widget.CoordinatorLayout>
+
