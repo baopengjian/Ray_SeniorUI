@@ -194,8 +194,7 @@ public class BehaviorCoordinatorLayout   extends RelativeLayout  implements View
                     R.styleable.BeaviorCoordinatorLayout);
             behavior = parseBehavior(c, attrs, a.getString(
                     R.styleable.BeaviorCoordinatorLayout_layout_behavior));
-            Log.i(TAG, "LayoutParams:   名字   "+ a.getString(
-                    R.styleable.BeaviorCoordinatorLayout_layout_behavior));
+            Log.i(TAG, "LayoutParams:   名字   "+ a.getString(R.styleable.BeaviorCoordinatorLayout_layout_behavior));
             a.recycle();
 
         }

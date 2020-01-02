@@ -82,6 +82,7 @@
         <activity android:name=".thirtieth.FloatingActionButtonActivity" />
         <activity android:name=".thirtieth.AppbarLayoutActivity" />
         <activity android:name=".thirty_first.CoordinatorLayoutActivity" />
+        <activity android:name=".thirty_first.apply.ApplyActivity"/>
         <activity android:name=".thirtieth_second.MaterialDesignAnimationActivity"
             />
         <activity android:name=".thirtieth_second.SecondActivity" />
@@ -89,6 +90,7 @@
         <activity android:name=".thirtieth_third.DoubleImageViewActivity"/>
         <activity android:name=".thirtieth_third.CustomTextViewActivity"/>
         <activity android:name=".thirtieth_fourth.JboxActivity"/>
+
     </application>
 
 </manifest>

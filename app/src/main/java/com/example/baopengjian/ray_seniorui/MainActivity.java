@@ -45,6 +45,7 @@ import com.example.baopengjian.ray_seniorui.thirtieth_third.AspecImageViewActivi
 import com.example.baopengjian.ray_seniorui.thirtieth_third.CustomTextViewActivity;
 import com.example.baopengjian.ray_seniorui.thirtieth_third.DoubleImageViewActivity;
 import com.example.baopengjian.ray_seniorui.thirty_first.CoordinatorLayoutActivity;
+import com.example.baopengjian.ray_seniorui.thirty_first.apply.ApplyActivity;
 import com.example.baopengjian.ray_seniorui.twelfth.SeniorUI12SvgActivity;
 import com.example.baopengjian.ray_seniorui.twentieth.ViewPagerTransformActivity;
 import com.example.baopengjian.ray_seniorui.twenty_eighth.TabLayoutActivity;
@@ -93,6 +94,7 @@ public class MainActivity extends AppCompatActivity {
             FloatingActionButtonActivity.class,
             AppbarLayoutActivity.class,
             CoordinatorLayoutActivity.class,
+            ApplyActivity.class,
             MaterialDesignAnimationActivity.class,
             AspecImageViewActivity.class,
             DoubleImageViewActivity.class,
@@ -129,6 +131,7 @@ public class MainActivity extends AppCompatActivity {
             "SeniorUI30_floatingbuttom",
             "SeniorUI30_AppbarLayout",
             "SeniorUI31_手写CoordinatorLayout和Behavior",
+            "SeniorUI31_Behavior+ViewPager复杂效果",
             "SeniorUI32_共享元素动画",
             "SeniorUI33_自定义控件onMeasure",
             "SeniorUI33_自定义控件onDraw",
@@ -155,7 +158,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void nonstop(View view) {
-        startActivity(new Intent(MainActivity.this, JboxActivity.class));
+        startActivity(new Intent(MainActivity.this, ApplyActivity.class));
     }
 
 }
